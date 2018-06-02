@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nola's Personal resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="//at.alicdn.com/t/font_624916_og494ixv6awi2j4i.js">
+    </script>
+</head>
+<body>    
+  <div class="topNavbar">  
+    <div class="topNavbar-inner clearfix">   <!--不在class名字后加上一个clearfix的话，div会不见-->
+        <a href="#" alt="logo" class="logo">
+            <span class="rs">RS</span><span class="card">card</span>
+        </a>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">关于</a></li>
+                <li><a href="#">技能</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </nav>
+    </div>
+  </div>
+  <div class="banner" >        <!--放图片用的-->
+     <div class="mask"></div>    <!--设置透明的黑色-->
+  </div>
+  <main>
+    <div class="userCard">
+        <div class="pictureAndText clearfix">    
+            <div class="picture">
+                <img src="./image/head.jpg" width="299px"  height="347px" alt="头像">
+            </div>
+            <div class="text">
+                <span class="welcome">Hello
+                    <span class="triangle"></span>
+                </span>
+                <h1>Nola</h1>
+                <p>前端工程师</p>
+                <hr>
+                <dl>
+                    <dt>年龄</dt>
+                    <dd>18</dd>
+                    <dt>所在城市</dt>
+                    <dd>上海</dd>
+                    <dt>邮箱</dt>
+                    <dd>1029478337@qq.com</dd>
+                    <dt>手机</dt>
+                    <dd>18939987656</dd>
+                </dl>
+            </div>
+        </div>
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg> 
+            </a>
+        </footer>
+    </div>
+    <a href="./resume.pdf" class="button" target="_blank" download>下载PDF简历</a>
+    <p>
+         Nola
+    </p>
+  </main>
+  <section>
+     <h2>技能</h2>
+     <ol>
+         <li>HTML 5 &amp; CSS 3 </li>
+         <li>Javascript</li>
+         <li>jQuery</li>
+         <li>Vue</li>
+         <li>React</li>
+         <li>HTTP</li>
+     </ol>
+  </section>
+  <section>
+     <h2>作品集</h2>
+     <nav>
+         <ol>
+             <li>All</li>
+             <li>框架</li>
+             <li>原生JS</li>
+         </ol>
+     </nav>
+     <div class="jobs">
+         <div class="big"></div>
+         <div class="small"></div>
+         <div class="small"></div>
+     </div>
+  </section>
+</body>
+</html>
