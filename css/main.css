@@ -89,7 +89,7 @@ hr{ height: 0; border: none; border-top: 1px solid #dedede; }
 .userCard dl dd{ color: #9da0a7; }
 .userCard .media { background: #e6686a; text-align:center; }
 .userCard .media a{ display: inline-block; width: 40px; padding: 5px 0; border-radius: 50%; 
-    margin: 16px; transition: background 0.5s; text-align: center; }
+    margin: 16px; transition: all 0.5s; text-align: center; }
 .userCard .media svg{ width: 30px; height: 30px;  /*因为svg不是内联元素所以可以加*/ fill: white; vertical-align: top; 
     margin: 0 0; display: inline-block; }
 .userCard .media a:hover{ background: #cf5d5f; }
@@ -128,15 +128,28 @@ section.skills.offset .skills-list ol .progressBar .progress{
 #progress-react { width: 20%; }
 #progress-http { width: 50%; }
 
-section.portfolio{ text-align: center; } section.portfolio nav{ margin: 10px auto 35px auto; 
-    display: inline-block;/*利用文档流，让下面的进度条和进度条上面的nav元素同宽*/ vertical-align: top; }
+section.portfolio{ text-align: center; } 
+/*display: inline-block;利用文档流，让下面的进度条和进度条上面的nav元素同宽*/ 
 /*text-align: center; 是内联元素的居中方法。 块级元素居中，将块级设为内联元素，在父级元素中进行居中，但是要有宽度才能居中*/
-section.portfolio nav ol{ display: inline-block; vertical-align: top; text-align: center;  }
 /*加了inline-block，下面会出现一个空隙，所以加了inline block一定要加vertical-align: top;  */
-section.portfolio nav li{ display: inline-block; vertical-align: top;  line-height: 1.1; margin-left:40px;
-    cursor: pointer;/*鼠标放上去的时候变成手形*/ }
-section.portfolio nav li:nth-child(1){ margin-left: 0px;    /*取消第一个元素的margin-left*/ }
-section.portfolio nav .bar{ background: white; height: 5px; border-radius: 3px; margin:8px 0; 
-    transition: 0.5s;  /*添加hover过度效果*/ }
-section.portfolio nav .bar .bar-inner{ background: #e6686a;/*不显示颜色可能是因为没有设定高度*/ height: 5px; border-radius: 3px; }
-section.portfolio .works{ position: relative; margin: 0 0 100px 0} 
+/*cursor: pointer;鼠标放上去的时候变成手形*/ 
+/*nth-child(1)第一个元素的。。*/ 
+/*transition: all 0.5s;  /*添加hover过度效果*/ 
+/*不显示颜色可能是因为没有设定高度*/
+/*section.portfolio .works{ margin: 0 0 100px 0;width: 300px;height: 200px;border: 10px red solid;
+    overflow: hidden;box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5);display: inline-block} */
+section.portfolio .works{
+    margin: 10px auto 35px auto; 
+    width: 300px;
+    height: 250px;
+    display: inline-block;/*利用文档流，让下面的进度条和进度条上面的nav元素同宽*/ vertical-align: top; 
+    border: red 10px solid;
+    display: inline-block;
+    position: relative;
+}
+.works .works-pic{
+    position: absolute;
+}
+.works-pic img{
+    width: 300px;
+}
