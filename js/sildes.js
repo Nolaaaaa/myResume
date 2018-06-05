@@ -13,15 +13,15 @@ $(document).ready(function(){
   
     //以下都是包装的函数
     function getImage(n){
-      return $(`.portfolio .images > img:nth-child(${x(n)})`)
+      return $(`.portfolio .works-pic > img:nth-child(${x(n)})`)
     }
     function startSlides(){
       n=1;
-      $(`.portfolio > .images > img:nth-child(${x(n)})`).addClass('current').siblings().addClass('enter')
+      $(`.portfolio .works-pic > img:nth-child(${x(n)})`).addClass('current').siblings().addClass('enter')
   
     }
     function x(n){
-      var size = $('.portfolio > .images > img').length
+      var size = $('.portfolio .works-pic img').length
       if(n>size){
         n = n%size
         if (n===0){
@@ -41,5 +41,4 @@ $(document).ready(function(){
     }
   
   })
-  
   

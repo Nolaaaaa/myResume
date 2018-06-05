@@ -139,14 +139,14 @@ section.portfolio{ text-align: center; }
 /*section.portfolio .works{ margin: 0 0 100px 0;width: 300px;height: 200px;border: 10px red solid;
     overflow: hidden;box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5);display: inline-block} */
 
-.portfolio .window{
+.portfolio works{
     /*设置窗口*/
     width: 300px;
     height: 200px;
     overflow: hidden;
     margin:20px auto;
 }
-.portfolio .window .images{
+.portfolio works .works-pic{
     /*如下两步可以使竖着排列的几张图片横着排列*/
     display: flex;   
     align-items: flex-start;
@@ -154,21 +154,21 @@ section.portfolio{ text-align: center; }
     position: relative;
     top: 0;
 }
-.portfolio .window .images img{
+.portfolio works .works-pic img{
     width: 300px;
     /*如果设置了绝对定位后，窗口一定要设置高度*/
     position: absolute;
 }
-.portfolio .window .images img.enter{
+.portfolio works .works-pic img.enter{
     left: 0;
     transform: translateX(-100%);
     z-index: 1;  
 }
-.portfolio .window .images img.current{
+.portfolio works .works-pic img.current{
     left: 0;
     transform: translateX(0);
 }
-.portfolio .window .images img.leave{
+.portfolio works .works-pic img.leave{
     left: 0;
     transform: translateX(100%);
 }
