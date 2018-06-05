@@ -138,18 +138,37 @@ section.portfolio{ text-align: center; }
 /*不显示颜色可能是因为没有设定高度*/
 /*section.portfolio .works{ margin: 0 0 100px 0;width: 300px;height: 200px;border: 10px red solid;
     overflow: hidden;box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5);display: inline-block} */
-section.portfolio .works{
-    margin: 10px auto 35px auto; 
+
+.portfolio .window{
+    /*设置窗口*/
     width: 300px;
-    height: 250px;
-    display: inline-block;/*利用文档流，让下面的进度条和进度条上面的nav元素同宽*/ vertical-align: top; 
-    border: red 10px solid;
-    display: inline-block;
-    position: relative;
+    height: 200px;
+    overflow: hidden;
+    margin:20px auto;
 }
-.works .works-pic{
+.portfolio .window .images{
+    /*如下两步可以使竖着排列的几张图片横着排列*/
+    display: flex;   
+    align-items: flex-start;
+    transition: all 0.5s;
+    position: relative;
+    top: 0;
+}
+.portfolio .window .images img{
+    width: 300px;
+    /*如果设置了绝对定位后，窗口一定要设置高度*/
     position: absolute;
 }
-.works-pic img{
-    width: 300px;
+.portfolio .window .images img.enter{
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 1;  
+}
+.portfolio .window .images img.current{
+    left: 0;
+    transform: translateX(0);
+}
+.portfolio .window .images img.leave{
+    left: 0;
+    transform: translateX(100%);
 }

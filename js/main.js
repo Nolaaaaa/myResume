@@ -45,7 +45,7 @@ $(document).ready(function(){
             requestAnimationFrame(animate);
             //2 遍历a标签
             for(let i=0;i<=aTags.length;i++){
-                aTags[i].onclick=function(x){
+                $(aTags[i]).on('click',function(x){
                     x.preventDefault();  //阻止a标签默认的跳
                     let a=x.currentTarget;
                     let href=a.getAttribute("href"); //找到href中的内容，如果href中时一个锚点则返回#siteSkills
@@ -67,7 +67,7 @@ $(document).ready(function(){
                             window.scroll(0,coords.y)
                         })
                         .start();
-                }
+                })
             }            
         }
         function findClosest(){
