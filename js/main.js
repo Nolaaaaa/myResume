@@ -5,10 +5,11 @@ $(document).ready(function(){
         },1000)
         
         //2 元素首先离开原来的位置，等页面滑到对应位置时元素返回来
+
         let specialTags=document.querySelectorAll("[data-x]"); 
         for(let i=0;i<specialTags.length;i++){
             specialTags[i].classList.add("offset");
-        }
+        }console.log(specialTags)
 
         //3 先运行一次findClosest()
         findClosest();
@@ -78,7 +79,7 @@ $(document).ready(function(){
             for(let i=1;i<specialTags.length;i++){
                 //console.log(window.scrollY)
                 //console.log(specialTags[i].offsetTop)
-                if(Math.abs(specialTags[i].offsetTop-window.scrollY)<Math.abs(specialTags[minIndex].offsetTop-window.scrollY)){
+                if(Math.abs(specialTags[i].offsetTop - window.scrollY)<Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){
                     minIndex=i;
                 }
             }

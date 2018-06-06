@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nola's Personal resume</title>
     <!--<link rel="stylesheet" href="./css/loading.css">-->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/loading.css">
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <script src="//at.alicdn.com/t/font_624916_81xliv4cafnipb9.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/sildes.js"></script>
@@ -52,9 +52,9 @@
         </div>
     </div>
     <div class="banner" >        <!--放图片用的-->
-     <div class="mask"></div>    <!--设置透明的黑色-->
+        <div class="mask"></div>    <!--设置透明的黑色-->
     </div>
-    <main data-x id="siteAbout">
+    <main data-x class="about"  id="siteAbout" >
         <div class="userCard">
             <div class="pictureAndText clearfix">    
                 <div class="picture">
@@ -172,14 +172,25 @@
           </ol>
         </div>
     </section>
-    <section data-x class="portfolio" id="siteWorks">
+    <section data-x class="portfolio clearfix" id="siteWorks">
         <h2>作品集</h2>
-        <div class="works">
-             <div class="works-pic">
-                <img src="./image/作品1.jpg" width="300" height:="200"  alt="作品1">
-                <img src="./image/作品2.jpg" width="300" height:="200" alt="作品2">
-                <img src="./image/作品3.jpg" width="300" height:="200" alt="作品3">
-             </div>
+        <div class="sildes">
+            <div class="works">
+                 <div class="worksPic" id="worksPic">
+                    <img src="./image/作品1.jpg" width="940" height:="550"  alt="作品1">
+                    <img src="./image/作品2.jpg" width="940" height:="550" alt="作品2">
+                    <img src="./image/作品3.jpg" width="940" height:="550" alt="作品3">
+                 </div>
+            </div>
+            <div class="controls" id="controls">
+                <button id="previous" class="previous">上一张</button>
+                <button id="next" class="next">下一张</button>
+            </div>
+            <div class="buttonWrapper" id="buttonWrapper" >
+                <button class="button"> </button>
+                <button class="button"> </button>
+                <button class="button"> </button>
+            </div>
         </div>
     </section>
     <!--引入tween.js库-->
