@@ -48,11 +48,13 @@ $(document).ready(function(){
     makeFakeSlides()
     $slides.css({transform:'translateX(-940px)'})
     bindEvents()
-    $(next).on('click', function(){
+    $(next).on('click', function(x){
       goToSlide(current+1)
+      x.preventDefault() //阻止a的默认跳转
     })
-    $(previous).on('click', function(){
+    $(previous).on('click', function(x){
       goToSlide(current-1)
+      x.preventDefault()
     })
 
     let timer = setInterval(function(){

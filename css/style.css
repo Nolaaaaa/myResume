@@ -148,17 +148,19 @@ section.portfolio .sildes .controls{
     left: 1%;
     display: inline-block;
 }
-section.portfolio .sildes .controls button{
-    width: 50px;
-    height: 100px;
+section.portfolio .sildes .controls a svg{
+    width: 40px;
+    height: 60px;
     display: inline-block;
+    fill:rgba(45, 46, 45, 0.959);
     background: rgba(250, 252, 251, 0.259);
     border-radius: 6px;
 }
-section.portfolio .sildes .controls .previous{
+
+section.portfolio .sildes .controls #previous{
     margin-right: 418px;
 }
-section.portfolio .sildes .controls .next{
+section.portfolio .sildes .controls #next{
     margin-left: 400px;
 }
 section.portfolio .sildes .buttonWrapper{
@@ -174,7 +176,7 @@ section.portfolio .sildes .buttonWrapper .button{
 
 }
 section.portfolio .sildes .buttonWrapper .button.highlight{
-    background-color: ;
+    
 }
 section.portfolio .sildes .works{
     /*设置窗口*/
