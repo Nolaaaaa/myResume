@@ -9,7 +9,8 @@ $(document).ready(function(){
         let specialTags=document.querySelectorAll("[data-x]"); 
         for(let i=0;i<specialTags.length;i++){
             specialTags[i].classList.add("offset");
-        }console.log(specialTags)
+        }
+        //console.log(specialTags)
 
         //3 先运行一次findClosest()
         findClosest();
@@ -121,4 +122,5 @@ $(document).ready(function(){
                 }
             }
         }
+        console.log(window.Swiper)
 });
