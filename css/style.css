@@ -10,17 +10,7 @@ h1 h2 h3 h4 h5 h6 h7{ font-weight: normal; }
 hr{ height: 0; border: none; border-top: 1px solid #dedede; }
 /*clear: both;这个css设置的作用是可以清除元素在设置float时的的浮动（设置位置：子元素的父级元素）*/ 
 .clearfix::after{ content: ''; display: block; clear: both;}
-.swiper-container {
-    width: 740px;
-    height: 400px;
-}
-.swiper-slide{
-    background: #dedede;
-}
-.swiper-button-prev,
-.swiper-button-next{
-    margin: 0 10px;
-}
+
 
 
 [data-x].offset{
@@ -141,4 +131,32 @@ section.skills.offset .skills-list ol .progressBar .progress{
 #progress-react { width: 20%; }
 #progress-http { width: 50%; }
 
-
+section.portfolio .slides .swiper-container {
+    width: 700px;
+    height: 380px;
+}
+section.portfolio .slides .swiper-slide{
+    background: #dedede;
+}
+/*怎么让自己设置的样式覆盖引入的其他的样式？不要用importent,把自己的样式放到其他样式之后就好了*/
+section.portfolio .slides .swiper-button-prev{
+    width:60px;
+    height:60px;
+    /*不要用直接用background设置背景，会把图标覆盖掉*/
+    border-radius: 50%;
+    left: 240px;
+}
+section.portfolio .slides .swiper-button-next{
+    width:60px;
+    height:60px;
+    /*不要用直接用background设置背景，会把图标覆盖掉*/
+    border-radius: 50%;
+    right: 240px;
+}
+section.portfolio{
+    text-align: center;
+}
+section.portfolio .slides{
+    width: 900px;
+    display: inline-block;
+}
