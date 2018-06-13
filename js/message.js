@@ -1,20 +1,11 @@
 !function(){
-    //通过全局变量 AV 获得SDK
-    // 存储服务
-    var { Query, User } = AV;
-    AV.init('appId', 'appKey');
-    // 实时消息服务
-    var { Realtime, TextMessage } = AV;
-    //调试用的
-    localStorage.setItem('debug', 'leancloud*,LC*');
-
 
     //init
     var APP_ID = 'rkk77nVws72ECp28upJUiGec-gzGzoHsz';
     var APP_KEY = 'LiQjClXYJC8slzGNIYmcB5tO';
     AV.init({
-    appId: APP_ID,
-    appKey: APP_KEY
+      appId: APP_ID,
+      appKey: APP_KEY
     });
     //console.log('运行到了这里')
 
