@@ -191,13 +191,26 @@
             <div class="swiper-button-next"></div>
         </div>
     </section>
+    <section>
+        <h2>留言</h2>
+        <form action="" id="postMessage" style="width: 700px; margin: 50px auto">
+            <input type="text" name="content">
+            <input type="submit" value="留言">
+        </form>
+    </section>
     <!--引入tween.js库-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <!-- 存储服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
+    <!-- 实时消息服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-realtime@4.0.1/dist/realtime.browser.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-live-query-min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/active-topbar.js"></script>
     <script src="./js/auto-slide-up.js"></script>
     <script src="./js/smoothly-navigation.js"></script>
     <script src="./js/sticky-topbar.js"></script> 
+    <script src="./js/message.js"></script>
 </body>
 </html>
