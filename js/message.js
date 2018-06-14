@@ -9,7 +9,6 @@
       fetch: function(){
         var query = new AV.Query('Message')   //.find().then(fn1.fn2) 如果成功了调用then的第一个参数，失败了调用第二个参数
         return query.find()     //返回一个promise对象(后面接的是.then)
-        console.log('1')
       },
       save: function(name,content){
         var Message = AV.Object.extend('Message')
