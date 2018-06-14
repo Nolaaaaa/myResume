@@ -107,7 +107,7 @@ main .downloadResume:hover{ box-shadow: 0px 2px 8px 0px rgba(34, 34, 34, 0.5); /
 main .selfIntroduction{ margin: 50px 40px 100px; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 18px; 
     font-size: 18px; }
 
-section h2{ text-align: center; margin: 20px 0; }
+section h2{ text-align: center; margin: 50px 0 20px 0; }
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
 section.skills .skills-list{ max-width: 940px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
     margin: 10px auto 100px auto; }
@@ -159,4 +159,30 @@ section.portfolio{
 section.portfolio .slides{
     width: 900px;
     display: inline-block;
+}
+
+section.message{
+    margin: 0px auto 50px auto;
+}
+section.message .postMessage{
+    width: 700px; 
+    margin: 20px auto;
+}
+section.message .postMessage .content{
+    display: inline-block;
+    width: 700px;
+    height: 40px;
+    overflow: scroll;
+    margin: 10px auto;
+}
+section.message ol{
+    background: #f4f4f4;
+    max-width: 700px;;
+    margin: 0 auto;
+    list-style: none;
+    border-top: 1px solid #dddbdb;
+}
+section.message ol li{
+    padding: 16px;
+    border-bottom: 1px solid #dddbdb;
 }
