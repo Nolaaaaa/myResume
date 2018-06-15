@@ -6,11 +6,11 @@
         var APP_KEY = 'LiQjClXYJC8slzGNIYmcB5tO'
         AV.init({ appId: APP_ID, appKey: APP_KEY })
       },
-      fetch: function(){
+      fetch: function(){        
         var query = new AV.Query('Message')   //.find().then(fn1.fn2) 如果成功了调用then的第一个参数，失败了调用第二个参数
         return query.find()     //返回一个promise对象(后面接的是.then)
       },
-      save: function(name,content){
+      save: function(name,content){     
         var Message = AV.Object.extend('Message')
         var message = new Message()
         return message.save({
@@ -35,7 +35,7 @@
         this.loadMessage()
         this.bindEvents()
       },
-      loadMessage: function(){        //批量获取
+      loadMessage: function(){       //批量获取数据库中的内容并添加到页面中
         this.model.fetch().then(
           (messages)=> {             
           //.find().then(fn1.fn2) 如果成功了调用then的第一个参数，失败了调用第二个参数
@@ -49,15 +49,14 @@
             console.log('提交失败')    // 异常处理
           });
       },
-      bindEvents: function(){
-        console.log('1')
+      bindEvents: function(){     //监听submit事件
         this.form.addEventListener('submit', (e)=>{  
-        console.log(e)
+            console.log(e)
             e.preventDefault()  //阻止默认事件
             this.saveMessage()  //一定要使用箭头函数（箭头函数没有this），如果不使用箭头函数，这个this会变成submit的Event
         })
       },
-      saveMessage: function(){
+      saveMessage: function(){      //保存并提交输入的内容到数据库，并使新增加的内容自动添加到页面，同时清除输入框中的内容
         var myForm=this.form
         let content = myForm.querySelector('input[name=content]').value
         let name = myForm.querySelector('input[name=name]').value
