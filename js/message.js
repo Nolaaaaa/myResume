@@ -51,7 +51,7 @@
       },
       bindEvents: function(){     //监听submit事件
         this.form.addEventListener('submit', (e)=>{  
-            console.log(e)
+            //console.log(e)
             e.preventDefault()  //阻止默认事件
             this.saveMessage()  //一定要使用箭头函数（箭头函数没有this），如果不使用箭头函数，这个this会变成submit的Event
         })
