@@ -62,17 +62,23 @@
         let name = myForm.querySelector('input[name=name]').value
         this.model.save(name,content).then(
           function(object) {
-            console.log('存入成功');   
-            //window.location.reload()用户留言后自动刷新页面,但是会刷新整个页面  
-            //如下方法会自动添加新生成的li，不会刷新页面
-            let li = document.createElement('li')
-            li.innerText = `${object.attributes.name}：${object.attributes.content}`
-            let messageList = document.querySelector('#messageList')
-            messageList.appendChild(li)
-            //自动提交后自动清空
-            myForm.querySelector('input[name=content]').value = ''
+            if(content === ''|| name === ''){
+              alert('请输入内容')
+            }else{
+              console.log('存入成功');   
+              //window.location.reload()用户留言后自动刷新页面,但是会刷新整个页面  
+              //如下方法会自动添加新生成的li，不会刷新页面
+              let li = document.createElement('li')
+              li.innerText = `${object.attributes.name}：${object.attributes.content}`
+              let messageList = document.querySelector('#messageList')
+              messageList.appendChild(li)
+              //自动提交后自动清空
+              myForm.querySelector('input[name=content]').value = ''
+            }
           })
       }
   }
   controller.init(view,model)
 }.call()
+
+
