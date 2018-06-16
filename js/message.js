@@ -60,22 +60,24 @@
         var myForm=this.form
         let content = myForm.querySelector('input[name=content]').value
         let name = myForm.querySelector('input[name=name]').value
-        this.model.save(name,content).then(
+        if(content === ''){
+          alert('emmmmm，不想说点什么吗？xxx到此一游也可以的啦')
+        }else if(name === ''){
+          alert('emmmmm，来者何人？')
+        }else{this.model.save(name,content).then(
           function(object) {
-            if(content === ''|| name === ''){
-              alert('请输入内容')
-            }else{
-              console.log('存入成功');   
-              //window.location.reload()用户留言后自动刷新页面,但是会刷新整个页面  
-              //如下方法会自动添加新生成的li，不会刷新页面
-              let li = document.createElement('li')
-              li.innerText = `${object.attributes.name}：${object.attributes.content}`
-              let messageList = document.querySelector('#messageList')
-              messageList.appendChild(li)
-              //自动提交后自动清空
-              myForm.querySelector('input[name=content]').value = ''
-            }
+            console.log('存入成功');   
+            //window.location.reload()用户留言后自动刷新页面,但是会刷新整个页面  
+            //如下方法会自动添加新生成的li，不会刷新页面
+            let li = document.createElement('li')
+            li.innerText = `${object.attributes.name}：${object.attributes.content}`
+            let messageList = document.querySelector('#messageList')
+            messageList.appendChild(li)
+            //自动提交后自动清空
+            myForm.querySelector('input[name=content]').value = ''
           })
+        }
+        
       }
   }
   controller.init(view,model)
