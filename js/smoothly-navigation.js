@@ -18,7 +18,7 @@
             requestAnimationFrame(animate);
         },
         bindEvents: function(){
-            var aTags = this.view.querySelectorAll("nav.menu ul li a") 
+            var aTags = this.view.querySelectorAll("nav.menu>ul>li>a") 
             for(let i=0;i<=aTags.length;i++){
                 $(aTags[i]).on('click',(x)=>{
                     x.preventDefault();  //阻止a标签默认的跳

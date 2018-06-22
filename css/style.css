@@ -1,124 +1,120 @@
 
 /*写在前面，如果你想缩紧代码，让代码变的更加简介，可使用control+j亲测好用*/
-body{ color: black; background-color: #efefef; margin: 0; font-family: "Arial"; position: relative; }
+body{ color: black; background-color: #efefef; margin: 0; font-family: "Arial"; position: relative;font-size:88% }
 /*color: inherit;继承父级元素的颜色*/ 
 a{ color: inherit;  text-decoration: none; }
 ul li { list-style: none; } 
 h1 h2 h3 h4 h5 h6 h7{ font-weight: normal; }
 .icon { width: 1em; height: 1em; vertical-align: -0.15em; fill: currentColor; overflow: hidden; }
-*{ margin: 0px; padding: 0px;  }
-hr{ height: 0; border: none; border-top: 1px solid #dedede; }
+*{ margin: .0em; padding: .0em;  }
+hr{ height: 0; border: none; border-top: .1em solid #dedede; }
 /*clear: both;这个css设置的作用是可以清除元素在设置float时的的浮动（设置位置：子元素的父级元素）*/ 
 .clearfix::after{ content: ''; display: block; clear: both;}
+h1{font-size:2.6em}
+h2{font-size:2.4em}
+h3{font-size:2.2em}
 
-
-
-[data-x].offset{
-    transform: translateY(40px);
-}
-[data-x]{
-    transform: translateY(0px);
-    transition: all 1s;
-}
+[data-x].offset{ transform: translateY(4.0em); }
+[data-x]{ transform: translateY(.0em); transition: all 1s; }
 
 /*position: fixed;使导航栏脱离文档流，即，高度不包含在div中，浮在页面上部*/
 /*position: fixed; top: 0;  left: 0; 使导航栏脱离文档流，即，高度不包含在div中，设置完这三个，会发现导航栏都偏到了左边*/
 /*（最好不要用width/height，容易出bug）设置完width: 100%; ，导航栏会回到右边，但是太偏右了，宽度比父级元素还宽*/ 
 /*解决方法，由于topNavbar在加上width后不能左右padding（如上条标注），故在topNavbar下面加div设padding*/ 
-.topNavbar{ display: block; padding: 16px 0px; color:#b7b7b7; position: fixed; top: 0;  left: 0; width: 100%; }
+.topNavbar{ display: block; padding: 1.6em .0em; color:#b7b7b7; position: fixed; top: 0;  left: 0; width: 100%; }
 /*如何让鼠标滚动是顶部导航栏发生变化？在js中建立一个条件语句，当scrollY>0时在topNavbar生成一个class，如果<=0则清除这个class*/
 /*z-index: 1; 堆叠元素，使其在其他元素上方显示*/
-.topNavbar.sticky{ background:white; padding:8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);color: #3d4451; z-index: 1;   }
-.topNavbar-inner{ padding: 0 16px; }
-.topNavbar .logo{ font-size: 22px; font-family: "Arial black"; padding-right:8px; padding: 4px 0 2px 0; }
-.topNavbar .logo .rs{ color: #e6686a; padding-right: 8px; }
+.topNavbar.sticky{ background:white; padding:.8em 0; box-shadow: 0 0 1.0em rgba(0, 0, 0, 0.25);color: #3d4451; z-index: 1;   }
+.topNavbar-inner{ padding: 0 1.6em; }
+.topNavbar .logo{ font-size: 2.2em; font-family: "Arial black"; padding-right:.8em; padding: .2em 0 ; }
+.topNavbar .logo .rs{ color: #cc7d7f; padding-right: .8em; }
 .topNavbar .logo .card{ color: #9a9da2; }
-.topNavbar nav{ float: right; padding-top: 4px; }
+.topNavbar nav{ float: right; padding-top: .7em; }
 .topNavbar nav>ul{ list-style: none; margin: 0; padding: 0; }
-.topNavbar nav>ul>li{ float: left; margin-right: 17px; margin-left: 17px;position: relative; }
+.topNavbar nav>ul>li{ float: left; margin-right: 1.7em; margin-left: 1.7em;position: relative; }
 .topNavbar a{ float: left; text-decoration: none; }
 /*内置元素a比li的高度高时设置 display: block; 可以解决*/
-.topNavbar nav>ul>li>a{ font-size: 12px; color: inherit;font-weight: bold; padding-bottom: 5px;padding-top: 5px; 
+.topNavbar nav>ul>li>a{ font-size: 1.2em; color: inherit;font-weight: bold; padding-bottom: .5em;padding-top: .5em; 
     display: block;position: relative;}
+@media(max-width:500px){
+    .topNavbar nav>ul>li{ margin-right: 1em; margin-left: 1em;}
+    .topNavbar nav>ul>li>a{font-size: 1.0em;padding-bottom: .2em;padding-top: .2em; }
+    .topNavbar .logo{ font-size: 1.8em; }
+}
+
 /*当鼠标放上去a标签下面出现一条线的方法如下：
     .topNavbar nav>ul>li>a{
-        border-bottom: 3px solid transparent;  先设置一个透明的边框，这样可以避免在:hover时元素出现浮动 
-        border-top: 3px solid transparent; 
+        border-bottom: .3em solid transparent;  先设置一个透明的边框，这样可以避免在:hover时元素出现浮动 
+        border-top: .3em solid transparent; 
     }
     .topNavbar nav>ul>li>a:hover{
-        border-bottom: 3px solid #dc6465;
+        border-bottom: .3em solid #dc6465;
     }
 }*/
 /*新方法：利用伪元素:hover和:after,当hover时让下面的线条动画从左滑倒右边*/ 
 .topNavbar nav>ul>li.active>a::after,
-.topNavbar nav>ul>li.highlight>a::after{ content: ""; width:100%; height: 3px; display: block; /*一定要是block，不然不会到a标签下面去*/ 
+.topNavbar nav>ul>li.highlight>a::after{ content: ""; width:100%; height: .3em; display: block; /*一定要是block，不然不会到a标签下面去*/ 
     position: absolute; background: #e06567; top:100%; left: 0;animation: muluSlide 0.3s; }
 .topNavbar .submenu{ display:none; position: absolute;/*从li中拿出来，脱离文档流*/ }
 .topNavbar li.active .submenu{ display: block; right: 0; top: 110%;cursor: pointer;animation: submenuSlide 0.3s;background: white;}
-.topNavbar .submenu li{ white-space: nowrap;/*不要换行*/padding: 5px 8px;}
+.topNavbar .submenu li,.topNavbar .submenu li a{ white-space: nowrap;/*不要换行*/padding: .5em .8em;}
 @keyframes muluSlide{ 0%{ width: 0; } 100%{ width: 100%; } }
-@keyframes submenuSlide{
-    0%{
-        margin-right: 100%;  /*他爸爸的100%*/
-    }
-    100%{
-        margin-right: 0%; 
-    }
-}
+@keyframes submenuSlide{ 0%{ margin-right: 100%;  /*他爸爸的100%*/ } 100%{ margin-right: 0%; } }
 
-.banner{ height:515px; background-image: url(../image/background.jpg); background-position: center center;/*背景图居中*/ 
+.banner{ height:51.5em; background-image: url(../image/background.jpg); background-position: center center;/*背景图居中*/ 
     background-size: cover;/*使背景图自己适应div*/ }
-.banner .mask{ height: 515px; background-color: rgba(0, 0, 0, 0.5); }
+.banner .mask{ height: 51.5em; background-color: rgba(0, 0, 0, 0.5); }
 
 /*设置卡片的最大宽度是940，如果页面变小，会自适应（如果只写宽度，则没有自适应）*/
-main .userCard{ background-color: #ffffff; max-width: 940px;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
-    box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); }
+main .userCard{ background-color: #ffffff; max-width: 84.0em;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
+    box-shadow: .0em .1em .5em .0em  rgba(34, 34, 34, 0.5); }
 /*外层div （userCard）不能加padding，则可以加在里面一层的div中*/
-main .userCard .pictureAndText{ padding: 50px;}
+main .userCard .pictureAndText{ padding: 5.0em;}
 main .userCard .picture{ background-position: center center;   /*背景图居中*/ background-size: cover;float: left; }
-main .userCard .text{ float: left; margin-left: 65px; width: 470px; color: black; }
+main .userCard .text{ float: left; margin-left: 6.5em;  color: black; }
 /*尽量不要用width/height*/
 /*明确行高。因为在不同的机器上可能不一样*/ 
-main .userCard .welcome{ background: #e6686a; color:wheat; padding: 4px 16px 4px 16px;line-height: 22px;position: relative; }
+main .userCard .welcome{ background: #e6686a; color:wheat; padding: .4em 1.6em .4em 1.6em;line-height: 2.2em;position: relative; }
 /*position也可以使元素脱离文档流，相对于窗口定位。 子元素上写absolute，父元素上写relative,子元素相对于父元素定位*/
-main .userCard .welcome .triangle{ border:10px solid transparent; width: 0px;/*为了保险起见*/ border-left-color: #e6686a; 
-    border-top-width: 0px;/*将边框上步的宽度去掉*/ position: absolute;left: 4px; top: 100%; /*使三角形移动到目标位置*/ } 
+main .userCard .welcome .triangle{ border:1.0em solid transparent; width: .0em;/*为了保险起见*/ border-left-color: #e6686a; 
+    border-top-width: .0em;/*将边框上步的宽度去掉*/ position: absolute;left: .4em; top: 100%; /*使三角形移动到目标位置*/ } 
 /*更多形状的画法可以搜索css tricks shapes*/
-main .userCard .text h1{ margin-top: 18px; margin-bottom: 0px; }
-main .userCard .text hr{ margin: 20px 0; }
+main .userCard .text h1{ margin-top: 1.8em; margin-bottom: .0em; }
+main .userCard .text hr{ margin: 2.0em 0; }
 main .userCard dl dt, main .userCard dl dd{ float: left; width: 50%;/*和上面的那个width相加等于100%即可以做到换行*/ 
-    line-height: 22px;/*设置固定的行高解决dd dt字体大小不一样的问题*/ padding: 5px 0;/*设置上下元素的行高*/ }  
+    line-height: 2.2em;/*设置固定的行高解决dd dt字体大小不一样的问题*/ padding: .5em 0;/*设置上下元素的行高*/ }  
 main .userCard dl dt{ font-weight: bold;    /*字体变粗*/ color: black; }
 main .userCard dl dd{ color: #9da0a7; }
 main .userCard .media { background: #e6686a; text-align:center; }
-main .userCard .media a{ display: inline-block; width: 40px; padding: 5px 0; border-radius: 50%; 
-    margin: 16px; transition: all 0.5s; text-align: center; }
-main .userCard .media svg{ width: 30px; height: 30px;  /*因为svg不是内联元素所以可以加*/ fill: white; vertical-align: top; 
+main .userCard .media a{ display: inline-block; width: 4.0em; padding: .5em 0; border-radius: 50%; 
+    margin: 1.6em; transition: all 0.5s; text-align: center; }
+main .userCard .media svg{ width: 3.0em; height: 3.0em;  /*因为svg不是内联元素所以可以加*/ fill: white; vertical-align: top; 
     margin: 0 0; display: inline-block; }
 main .userCard .media a:hover{ background: #cf5d5f; }
 
-body main { margin-top:-340px; }
-main .downloadResume-wrapper{ text-align: center; margin-top: 28px; } 
+body main { margin-top:-34.0em; }
+main .downloadResume-wrapper{ text-align: center; margin-top: 2.8em; } 
 /*如果内联元素居中，可在标签外加一个块级标签，并且设置text-align为居中*/ 
 /*这里为什么不能设置display: block;  ？因为这个标签需要用边框包裹，用block的话就是块级，边框无限大*/   
-main .downloadResume{ display: inline-block; text-align: center; padding: 18px 60px; font-size: 14px; line-height: 14px; 
-    border:1px solid #cdcfd1; border-radius: 2px; font-weight: bold; transition: box-shadow 0.5s;/*添加hover过度效果*/ }
-main .downloadResume:hover{ box-shadow: 0px 2px 8px 0px rgba(34, 34, 34, 0.5); /*阴影效果搜索css shadow generator*/ }
-main .selfIntroduction{ margin: 50px 40px 100px; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 18px; 
-    font-size: 18px; }
+main .downloadResume{ display: inline-block; text-align: center; padding: 1.8em 6.0em; font-size: 1.4em; line-height: 1.4em; 
+    border:.1em solid #cdcfd1; border-radius: .2em; font-weight: bold; transition: box-shadow 0.5s;/*添加hover过度效果*/ }
+main .downloadResume:hover{ box-shadow: .0em .2em .8em .0em rgba(34, 34, 34, 0.5); /*阴影效果搜索css shadow generator*/ }
+main .selfIntroduction{ margin: 5.0em 4.0em 10.0em; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 1.8em; 
+    font-size: 1.8em; }
 
-section h2{ text-align: center; margin: 50px 0 20px 0; }
-section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
-section.skills .skills-list{ max-width: 940px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
-    margin: 10px auto 100px auto; }
-section.skills .skills-list ol{ padding:40px 40px 10px 40px; }
+section h2{ text-align: center; margin: 5.0em 0 2.0em 0; }
+section.skills h3{ font-size: 1.4em; line-height: 1.1; padding-right: 4.0em; }
+section.skills .skills-list{ max-width: 84.0em; box-shadow: .0em .1em .5em .0em  rgba(34, 34, 34, 0.5); background: #ffffff; 
+    margin: 1.0em auto 10.0em auto; }
+section.skills .skills-list ol{ padding:4.0em 4.0em 1.0em 4.0em; }
 section.skills .skills-list ol li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
 /*将宽度设低，然后将奇数个li元素左浮动，偶数个元素右浮动*/
+@media(max-width:500px){ section.skills .skills-list ol li{width: 100%; } }
 section.skills .skills-list ol li:nth-child(obb){  /*奇数个li元素*/ float: left; }
 section.skills .skills-list ol li:nth-child(even){  /*偶数个li元素*/ float:right; }
-section.skills .skills-list ol .progressBar{ height: 5px; background: #fae1e1; border-radius: 3px;  margin:4px 0 40px;overflow:hidden }
+section.skills .skills-list ol .progressBar{ height: .5em; background: #fae1e1; border-radius: .3em;  margin:.4em 0 4.0em;overflow:hidden }
 section.skills .skills-list ol .progressBar .progress{ background: #e6686a; width: 50%; /*默认进度条的长度，如需不一样，可另外单独加ID*/ 
-    height: 100%; border-radius: 3px;transform: translateX(0%);transition: all 1s;}
+    height: 100%; border-radius: .3em;transform: translateX(0%);transition: all 1s;}
 /*让页面滑到skill-list的时候，技能条才动画出现。第一步：使它在元素有offset属性时translateX(-100%)使消失，
 第二步：使它在元素有offset属性时translateX(-100%)使出现，第三步：在父级元素progressBar上添加overflow:hidden,防止溢出*/
 section.skills.offset .skills-list ol .progressBar .progress{
@@ -131,59 +127,18 @@ section.skills.offset .skills-list ol .progressBar .progress{
 #progress-react { width: 20%; }
 #progress-http { width: 50%; }
 
-section.portfolio .slides .swiper-container {
-    width: 700px;
-    height: 380px;
-}
-section.portfolio .slides .swiper-slide{
-    background: #dedede;
-}
+section.portfolio .slides .swiper-container { max-width: 70.0em; height: 38.0em; }
+section.portfolio .slides .swiper-slide{ background: #dedede; }
 /*怎么让自己设置的样式覆盖引入的其他的样式？不要用importent,把自己的样式放到其他样式之后就好了*/
-section.portfolio .slides .swiper-button-prev{
-    width:60px;
-    height:60px;
-    /*不要用直接用background设置背景，会把图标覆盖掉*/
-    border-radius: 50%;
-    left: 240px;
-}
-section.portfolio .slides .swiper-button-next{
-    width:60px;
-    height:60px;
-    /*不要用直接用background设置背景，会把图标覆盖掉*/
-    border-radius: 50%;
-    right: 240px;
-}
-section.portfolio{
-    text-align: center;
-}
-section.portfolio .slides{
-    width: 900px;
-    display: inline-block;
-}
+section.portfolio .slides .swiper-button-prev{ width:6.0em; height:6.0em; border-radius: 50%; left: 8%; }
+/*不要用直接用background设置背景，会把图标覆盖掉*/
+section.portfolio .slides .swiper-button-next{ width:6.0em; height:6.0em; border-radius: 50%; right: 8%; }
+section.portfolio{ text-align: center; }
+section.portfolio .slides{ width: 100%; display: inline-block; }
 
-section.message{
-    margin: 0px auto 50px auto;
-}
-section.message .postMessage{
-    width: 700px; 
-    margin: 20px auto;
-}
-section.message .postMessage .content{
-    display: inline-block;
-    width: 700px;
-    height: 40px;
-    overflow: scroll;
-    margin: 10px auto;
-}
-section.message ol{
-    background: #f4f4f4;
-    max-width: 700px;;
-    margin: 0 auto;
-    list-style: none;
-    border-top: 1px solid #dddbdb;
-}
-section.message ol li{
-    padding: 16px;
-    border-bottom: 1px solid #dddbdb;
-}
+section.message{ margin: .0em auto 5.0em auto; }
+section.message .postMessage{ max-width: 70.0em; margin: 2.0em auto; }
+section.message .postMessage .content{ display: inline-block; max-width: 70.0em; height: 4.0em; overflow: scroll; margin: 1.0em auto; }
+section.message ol{ background: #f4f4f4; max-width: 70.0em;; margin: 0 auto; list-style: none; border-top: .1em solid #dddbdb; }
+section.message ol li{ padding: 1.6em; border-bottom: .1em solid #dddbdb; }
 
