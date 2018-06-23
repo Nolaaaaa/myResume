@@ -137,8 +137,8 @@ section.portfolio{ text-align: center; }
 section.portfolio .slides{ width: 100%; display: inline-block; }
 
 section.message{ margin: .0em auto 5.0em auto; }
-section.message .postMessage{ max-width: 70.0em; margin: 2.0em auto; }
-section.message .postMessage .content{ display: inline-block; max-width: 70.0em; height: 4.0em; overflow: scroll; margin: 1.0em auto; }
+section.message .postMessage{ max-width: 70.0em; margin: 3.0em auto; }
+section.message .postMessage .content{ display: inline-block; }
 section.message ol{ background: #f4f4f4; max-width: 70.0em;; margin: 0 auto; list-style: none; border-top: .1em solid #dddbdb; }
 section.message ol li{ padding: 1.6em; border-bottom: .1em solid #dddbdb; }
 
