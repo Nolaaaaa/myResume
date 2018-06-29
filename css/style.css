@@ -1,6 +1,6 @@
 
 /*写在前面，如果你想缩紧代码，让代码变的更加简介，可使用control+j亲测好用*/
-body{ color: black; background-color: #efefef; margin: 0; font-family: "Arial"; position: relative;font-size:88% }
+body{ color: black; background-color: #efefef; margin: 0; font-family: "Arial"; position: relative;font-size:63% }
 /*color: inherit;继承父级元素的颜色*/ 
 a{ color: inherit;  text-decoration: none; }
 ul li { list-style: none; } 
