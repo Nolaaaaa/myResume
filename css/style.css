@@ -1,6 +1,6 @@
 
 /*写在前面，如果你想缩紧代码，让代码变的更加简介，可使用control+j亲测好用*/
-body{ color: black; background-color: #efefef; margin: 0; font-family: "Arial"; position: relative;font-size:63% }
+body{ color: black; background-color: #efefef; margin: 0; font-family: "Arial"; position: relative;font-size:80% }
 /*color: inherit;继承父级元素的颜色*/ 
 a{ color: inherit;  text-decoration: none; }
 ul li { list-style: none; } 
@@ -25,11 +25,11 @@ h3{font-size:2.2em}
 /*如何让鼠标滚动是顶部导航栏发生变化？在js中建立一个条件语句，当scrollY>0时在topNavbar生成一个class，如果<=0则清除这个class*/
 /*z-index: 1; 堆叠元素，使其在其他元素上方显示*/
 .topNavbar.sticky{ background:white; padding:.8em 0; box-shadow: 0 0 1.0em rgba(0, 0, 0, 0.25);color: #3d4451; z-index: 1;   }
-.topNavbar-inner{ padding: 0 1.6em; }
+.topNavbar-inner{ padding: 0 1.6em;}
 .topNavbar .logo{ font-size: 2.2em; font-family: "Arial black"; padding-right:.8em; padding: .2em 0 ; }
 .topNavbar .logo .rs{ color: #cc7d7f; padding-right: .8em; }
 .topNavbar .logo .card{ color: #9a9da2; }
-.topNavbar nav{ float: right; padding-top: .7em; }
+.topNavbar nav{ float: right; padding-top: .6em; }
 .topNavbar nav>ul{ list-style: none; margin: 0; padding: 0; }
 .topNavbar nav>ul>li{ float: left; margin-right: 1.7em; margin-left: 1.7em;position: relative; }
 .topNavbar a{ float: left; text-decoration: none; }
@@ -69,9 +69,9 @@ h3{font-size:2.2em}
 main .userCard{ background-color: #ffffff; max-width: 84.0em;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
     box-shadow: .0em .1em .5em .0em  rgba(34, 34, 34, 0.5); }
 /*外层div （userCard）不能加padding，则可以加在里面一层的div中*/
-main .userCard .pictureAndText{ padding: 5.0em;}
-main .userCard .picture{ background-position: center center;   /*背景图居中*/ background-size: cover;float: left; }
-main .userCard .text{ float: left; margin-left: 6.5em;  color: black; }
+main .userCard .pictureAndText{ padding: 5.0em 5.0em 5.0em 0;}
+main .userCard .picture{ background-position: center center;   /*背景图居中*/ background-size: cover;float: left;margin: 0 1em 0 5.0em ; }
+main .userCard .text{ float: left; margin-left: 5em;  color: black; }
 /*尽量不要用width/height*/
 /*明确行高。因为在不同的机器上可能不一样*/ 
 main .userCard .welcome{ background: #e6686a; color:wheat; padding: .4em 1.6em .4em 1.6em;line-height: 2.2em;position: relative; }
@@ -96,7 +96,7 @@ body main { margin-top:-34.0em; }
 main .downloadResume-wrapper{ text-align: center; margin-top: 2.8em; } 
 /*如果内联元素居中，可在标签外加一个块级标签，并且设置text-align为居中*/ 
 /*这里为什么不能设置display: block;  ？因为这个标签需要用边框包裹，用block的话就是块级，边框无限大*/   
-main .downloadResume{ display: inline-block; text-align: center; padding: 1.8em 6.0em; font-size: 1.4em; line-height: 1.4em; 
+main .downloadResume{ display: inline-block; text-align: center; padding: 1.2em 4.0em; font-size: 1.4em; line-height: 1.4em; 
     border:.1em solid #cdcfd1; border-radius: .2em; font-weight: bold; transition: box-shadow 0.5s;/*添加hover过度效果*/ }
 main .downloadResume:hover{ box-shadow: .0em .2em .8em .0em rgba(34, 34, 34, 0.5); /*阴影效果搜索css shadow generator*/ }
 main .selfIntroduction{ margin: 5.0em 4.0em 10.0em; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 1.8em; 
