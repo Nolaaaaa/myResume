@@ -27,7 +27,7 @@ h3{font-size:22px}
 .topNavbar.sticky{ background:white; padding:8px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);color: #3d4451; z-index: 1;   }
 .topNavbar-inner{ padding: 0 16px;}
 .topNavbar .logo{ font-size: 22px; font-family: "Arial black"; padding-right:8px; padding: 2px 0 ; }
-.topNavbar .logo .rs{ color: #cc7d7f; padding-right: 8px; }
+.topNavbar .logo .rs{ color: #e06567; padding-right: 8px; }
 .topNavbar .logo .card{ color: #9a9da2; }
 .topNavbar nav{ float: right; padding-top: 6px; }
 .topNavbar nav>ul{ list-style: none; margin: 0; padding: 0; }
@@ -69,12 +69,12 @@ h3{font-size:22px}
 main .userCard{ background-color: #ffffff; max-width: 840px;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
     box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); }
 /*外层div （userCard）不能加padding，则可以加在里面一层的div中*/
-main .userCard .pictureAndText{ padding: 50px 50px 50px 0;}
-main .userCard .picture{ overflow: hidden ;width: 299px; height: 347px;  /*背景图居中*/ background-size: cover;float: left;margin: 0 0 0 50px ; }
-main .userCard .text{ float: left; margin-left:50px;  color: black; }
+main .userCard .pictureAndText{ padding: 50px 50px 50px 0;display: flex;justify-content: space-between}
+main .userCard .picture{ overflow: hidden ;width: 299px; height: 347px;  /*背景图居中*/ background-size: cover;margin-left:50px ; }
+main .userCard .text{ margin-left:50px;  color: black; }
 /*尽量不要用width/height*/
 /*明确行高。因为在不同的机器上可能不一样*/ 
-main .userCard .welcome{ background: #e6686a; color:wheat; padding: 4px 16px 4px 16px;line-height: 22px;position: relative; }
+main .userCard .welcome{ background: #e6686a; color:white; padding: 4px 16px 4px 16px;line-height: 22px;position: relative; }
 /*position也可以使元素脱离文档流，相对于窗口定位。 子元素上写absolute，父元素上写relative,子元素相对于父元素定位*/
 main .userCard .welcome .triangle{ border:10px solid transparent; width: 0px;/*为了保险起见*/ border-left-color: #e6686a; 
     border-top-width: 0px;/*将边框上步的宽度去掉*/ position: absolute;left: 4px; top: 100%; /*使三角形移动到目标位置*/ } 

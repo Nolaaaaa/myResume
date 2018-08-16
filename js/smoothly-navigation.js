@@ -32,7 +32,7 @@
         scrollToElement: function(element){
             let top=element.offsetTop;    //目标的高度
             let currentTop=window.scrollY; //所在的位置
-            let targetTop=top-80;  //目标位置
+            let targetTop=top-100;  //目标位置
             let s=targetTop-currentTop;     //所在到目标的高度差
             let t=Math.abs((s/100)*200)    //Math.abs方法保证时间为正值不为负数。ps:Math的首字母需要大写！！！
             var coords={y:currentTop};     //y为所在位置
