@@ -4,7 +4,7 @@
         "projects": [
             {
                 "title": "待办事项",
-                "Etitle": "TodoList",
+                "Etitle": "A online TodoList",
                 "skills": [
                     {"skill":"Vue"},
                     {"skill":"JavaScript"},
@@ -14,16 +14,56 @@
                     {"skill":"webpack"},
                     {"skill":"LeanCloud"}
                 ],
-                "describe": "一个可以在线使用的TodoList，利用vue-cli + webpack进行模块化开发，用scss进行css预处理编写",
+                "describe": "一个可以在线使用的TodoList，利用vue-cli + webpack进行模块化开发，用scss进行css预处理编写，主要功能有:",
                 "functions": [
-                    {"function":"具有登录注册功能，登录成功后才可查看待办事项内容"},
-                    {"function":"具有增删改查的功能,数据内容存储于LeanCloud的服务器"},
-                    {"function":"手机端，PC端均可用"}
+                    {"function":"登录注册功能，登录成功后才可查看待办事项内容"},
+                    {"function":"通过LeanCloud后台管理系统，实现歌曲新建、添加、编辑、删除。"},
+                    {"function":"适配手机端"}
                 ],
                 "preview": "https://nolaaaaa.github.io/TodoList/dist/",
                 "code": "https://github.com/Nolaaaaa/TodoList",
                 "image": "./image/todo.jpg",
                 "imageAlt": "TodoList"
+            },
+            {
+                "title": "QQ音乐",
+                "Etitle": "QQ music player",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"Sass"},
+                    {"skill":"HTML5"},
+                    {"skill":"webpack"}
+                ],
+                "describe": "使用ES6语法进行代码编写，利用express + cors实现跨域从qq音乐官网获取并展示出首页电台及热门歌单，音乐排行榜，搜索音乐等页面。通过懒加载按需加载首页、排行榜、搜索，优化网页性能。运用HTML5+CSS3实现播放页面，动态播放出歌词，歌词准确提示。利用Sass写css，样式代码结构清晰，主要功能有:",
+                "functions": [
+                    {"function":"展示歌曲列表、展示热歌榜歌曲、搜索歌曲。"},
+                    {"function":"具有搜索功能"}
+                ],
+                "preview": "https://nolaaaaa.github.io/qq-music/",
+                "code": "https://github.com/Nolaaaaa/qq-music",
+                "image": "./image/music.jpg",
+                "imageAlt": "QQ music"
+            },
+            {
+                "title": "Canvas画板",
+                "Etitle": "A simple practical canvas",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"}
+                ],
+                "describe": "通过原生 JavaScript + canvas 实现的在线画板，主要功能有:",
+                "functions": [
+                    {"function":"绘画颜色、画笔大小可选择"},
+                    {"function":"具有橡皮擦、清除等绘画功能"},
+                    {"function":"具有绘画内容本地保存的功能"},
+                    {"function":"可通过鼠标绘画，也可触摸绘画。适配手机端"}
+                ],
+                "preview": "https://nolaaaaa.github.io/canvas/index.html",
+                "code": "https://github.com/Nolaaaaa/canvas",
+                "image": "./image/canvas.jpg",
+                "imageAlt": "Canvas"
             }
         ]
     }
