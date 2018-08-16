@@ -63,7 +63,7 @@ h3{font-size:22px}
 
 .banner{ height:515px; background-image: url(../image/background.jpg); background-position: center center;/*背景图居中*/ 
     background-size: cover;/*使背景图自己适应div*/ }
-.banner .mask{ height: 515px; background-color: rgba(0, 0, 0, 0.5); }
+.banner .mask{ height: 515px; background-color: rgba(0, 0, 0, 0.7); }
 
 /*设置卡片的最大宽度是940，如果页面变小，会自适应（如果只写宽度，则没有自适应）*/
 main .userCard{ background-color: #ffffff; max-width: 840px;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
@@ -79,7 +79,7 @@ main .userCard .welcome{ background: #e6686a; color:white; padding: 4px 16px 4px
 main .userCard .welcome .triangle{ border:10px solid transparent; width: 0px;/*为了保险起见*/ border-left-color: #e6686a; 
     border-top-width: 0px;/*将边框上步的宽度去掉*/ position: absolute;left: 4px; top: 100%; /*使三角形移动到目标位置*/ } 
 /*更多形状的画法可以搜索css tricks shapes*/
-main .userCard .text h1{ margin-top: 18px; margin-bottom: 0px; }
+main .userCard .text h1{ margin-top: 18px; margin-bottom: 6px; }
 main .userCard .text hr{ margin: 20px 0; }
 main .userCard dl dt, main .userCard dl dd{ float: left; width: 50%;/*和上面的那个width相加等于100%即可以做到换行*/ 
     line-height: 22px;/*设置固定的行高解决dd dt字体大小不一样的问题*/ padding: 5px 0;/*设置上下元素的行高*/ }  
