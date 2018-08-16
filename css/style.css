@@ -142,3 +142,27 @@ section.message .postMessage .content{ display: inline-block; }
 section.message ol{ background: #f4f4f4; max-width: 70.0em;; margin: 0 auto; list-style: none; border-top: .1em solid #dddbdb; }
 section.message ol li{ padding: 1.6em; border-bottom: .1em solid #dddbdb; }
 
+section.download {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+}
+section.download .downloadResume {
+    display: inline-block;
+    font-size: 14px;
+    padding: 1.4em 1.8em .6em;
+    color: #f4f4f4;
+    font-weight: bold;
+    writing-mode: vertical-lr; /* 竖起来显示 */
+    letter-spacing: 1em;
+    background: #cf5d5f;
+    font-family: Arial, sans-serif;
+    border: solid 0 #e3edf4;
+    border-bottom: 2px solid #cf5d5f;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0.8;
+}
