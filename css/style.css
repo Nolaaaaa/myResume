@@ -102,7 +102,7 @@ main .downloadResume:hover{ box-shadow: 0px 2px 8px 0px rgba(34, 34, 34, 0.5); /
 main .selfIntroduction{ margin: 50px 40px 100px; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 18px; 
     font-size: 18px; }
 
-section h2{ text-align: center; margin: 50px 0 20px 0; }
+section h2{ text-align: center; margin: 20px 0 20px; }
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
 section.skills .skills-list{ max-width: 900px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
     margin: 10px auto 100px auto; }
@@ -127,6 +127,8 @@ section.skills.offset .skills-list ol .progressBar .progress{
 #progress-react { width: 20%; }
 #progress-http { width: 50%; }
 
+section.portfolio { background: #fafafa; padding: 60px 0 60px 0;margin-bottom: 100px; }
+section .boundary { clear: both; padding: 20px 0; max-width: 900px; margin: 0 auto; }
 section.portfolio .slides .swiper-container { max-width: 900px; height: 380px; }
 section.portfolio .slides .swiper-slide{ background: #dedede; }
 /*怎么让自己设置的样式覆盖引入的其他的样式？不要用importent,把自己的样式放到其他样式之后就好了*/
@@ -167,17 +169,6 @@ section.download .downloadResume {
     opacity: 0.8;
 }
 
-
-section.portfolio {
-    background: #fafafa;
-    padding: 60px 0 60px 0;
-}
-.boundary {
-    clear: both;
-    padding: 50px 0;
-    max-width: 900px;
-    margin: 0 auto;
-}
 .boundary .section_body .project {
     border-top: 2px dashed #ccc;
     display: flex;

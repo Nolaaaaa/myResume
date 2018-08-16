@@ -10,7 +10,7 @@
                     {"skill":"JavaScript"},
                     {"skill":"CSS3"},
                     {"skill":"HTML5"},
-                    {"skill":"webpack"},
+                    {"skill":"Webpack"},
                     {"skill":"LeanCloud"}
                 ],
                 "describe": "一个可以在线使用的 <b>TodoList</b> ，利用 <b>vue-cli + webpack</b> 进行模块化开发，主要功能有:",
@@ -32,7 +32,7 @@
                     {"skill":"CSS3"},
                     {"skill":"Sass"},
                     {"skill":"HTML5"},
-                    {"skill":"webpack"}
+                    {"skill":"Webpack"}
                 ],
                 "describe": "使用 <b>ES6</b> 语法进行代码编写，利用 <b>express + cors</b> 实现跨域从qq音乐官网获取并展示出首页电台及热门歌单，音乐排行榜，搜索音乐等页面。通过懒加载按需加载首页、排行榜、搜索，优化网页性能。运用 <b>HTML5 + css3</b> 实现播放页面，动态播放出歌词，歌词准确提示。利用 <b>Sass</b> 编写 <b>css</b> ，样式代码结构清晰，主要功能有:",
                 "functions": [
@@ -56,13 +56,36 @@
                 "functions": [
                     {"function":"绘画颜色、画笔大小可选择"},
                     {"function":"具有橡皮擦、清除等绘画功能"},
-                    {"function":"具有绘画内容本地保存的功能"},
+                    {"function":"绘画内容可本地保存"},
                     {"function":"可通过鼠标绘画，也可触摸绘画。适配手机端"}
                 ],
                 "preview": "https://nolaaaaa.github.io/canvas/index.html",
                 "code": "https://github.com/Nolaaaaa/canvas",
                 "image": "./image/canvas.jpg",
                 "imageAlt": "Canvas"
+            },
+            {
+                "title": "有赞商城",
+                "Etitle": "Vuejs reconstruct youzan shop store",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"Vue"},
+                    {"skill":"Vue-router"},
+                    {"skill":"Vuex"}
+                ],
+                "describe": "通过原生 <b>JavaScript + canvas</b> 实现的在线画板，主要功能有:",
+                "functions": [
+                    {"function":"绘画颜色、画笔大小可选择"},
+                    {"function":"具有橡皮擦、清除等绘画功能"},
+                    {"function":"绘画内容可本地保存"},
+                    {"function":"可通过鼠标绘画，也可触摸绘画。适配手机端"}
+                ],
+                "preview": "http://nolaaaaa.top/preview/preview.png",
+                "code": "https://github.com/Nolaaaaa/youzan",
+                "image": "./image/youzan.jpg",
+                "imageAlt": "Youzan"
             }
         ]
     }
