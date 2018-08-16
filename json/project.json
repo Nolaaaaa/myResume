@@ -9,19 +9,21 @@
                     {"skill":"Vue"},
                     {"skill":"JavaScript"},
                     {"skill":"CSS3"},
+                    {"skill":"Sass"},
                     {"skill":"HTML5"},
-                    {"skill":"jQuery"}
+                    {"skill":"webpack"},
+                    {"skill":"LeanCloud"}
                 ],
-                "describe": "xxxx",
+                "describe": "一个可以在线使用的TodoList，利用vue-cli + webpack进行模块化开发，用scss进行css预处理编写",
                 "functions": [
-                    {"function":"aaa"},
-                    {"function":"aaa"},
-                    {"function":"aaa"}
+                    {"function":"具有登录注册功能，登录成功后才可查看待办事项内容"},
+                    {"function":"具有增删改查的功能,数据内容存储于LeanCloud的服务器"},
+                    {"function":"手机端，PC端均可用"}
                 ],
-                "preview": "#",
-                "code": "#",
-                "image": "aaa",
-                "imageAlt": "aaa"
+                "preview": "https://nolaaaaa.github.io/TodoList/dist/",
+                "code": "https://github.com/Nolaaaaa/TodoList",
+                "image": "./image/todo.jpg",
+                "imageAlt": "TodoList"
             }
         ]
     }

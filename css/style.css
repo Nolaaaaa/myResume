@@ -31,7 +31,7 @@ h3{font-size:22px}
 .topNavbar .logo .card{ color: #9a9da2; }
 .topNavbar nav{ float: right; padding-top: 6px; }
 .topNavbar nav>ul{ list-style: none; margin: 0; padding: 0; }
-.topNavbar nav>ul>li{ float: left; margin-right: 17px; margin-left: 17px;position: relative; }
+.topNavbar nav>ul>li{ float: left; padding-right: 17px; padding-left: 17px;position: relative; }
 .topNavbar a{ float: left; text-decoration: none; }
 /*内置元素a比li的高度高时设置 display: block; 可以解决*/
 .topNavbar nav>ul>li>a{ font-size: 12px; color: inherit;font-weight: bold; padding-bottom: 5px;padding-top: 5px; 
@@ -66,7 +66,7 @@ h3{font-size:22px}
 .banner .mask{ height: 515px; background-color: rgba(0, 0, 0, 0.7); }
 
 /*设置卡片的最大宽度是940，如果页面变小，会自适应（如果只写宽度，则没有自适应）*/
-main .userCard{ background-color: #ffffff; max-width: 840px;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
+main .userCard{ background-color: #ffffff; max-width: 900px;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
     box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); }
 /*外层div （userCard）不能加padding，则可以加在里面一层的div中*/
 main .userCard .pictureAndText{ padding: 50px 50px 50px 0;display: flex;justify-content: space-between}
@@ -104,7 +104,7 @@ main .selfIntroduction{ margin: 50px 40px 100px; text-align: center; font-family
 
 section h2{ text-align: center; margin: 50px 0 20px 0; }
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
-section.skills .skills-list{ max-width: 840px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
+section.skills .skills-list{ max-width: 900px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
     margin: 10px auto 100px auto; }
 section.skills .skills-list ol{ padding:40px 40px 10px 40px; }
 section.skills .skills-list ol li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
@@ -127,7 +127,7 @@ section.skills.offset .skills-list ol .progressBar .progress{
 #progress-react { width: 20%; }
 #progress-http { width: 50%; }
 
-section.portfolio .slides .swiper-container { max-width: 700px; height: 380px; }
+section.portfolio .slides .swiper-container { max-width: 900px; height: 380px; }
 section.portfolio .slides .swiper-slide{ background: #dedede; }
 /*怎么让自己设置的样式覆盖引入的其他的样式？不要用importent,把自己的样式放到其他样式之后就好了*/
 section.portfolio .slides .swiper-button-prev{ width:60px; height:60px; border-radius: 50%; left: 8%; }
@@ -137,9 +137,9 @@ section.portfolio{ text-align: center; }
 section.portfolio .slides{ width: 100%; display: inline-block; }
 
 section.message{ margin: 0px auto 50px auto; }
-section.message .postMessage{ max-width: 700px; margin: 30px auto; }
+section.message .postMessage{ max-width: 900px; margin: 30px auto; text-align: center;}
 section.message .postMessage .content{ display: inline-block; }
-section.message ol{ background: #f4f4f4; max-width: 700px;; margin: 0 auto; list-style: none; border-top: 1px solid #dddbdb; }
+section.message ol{ background: #f4f4f4; max-width: 900px;; margin: 0 auto; list-style: none; border-top: 1px solid #dddbdb; }
 section.message ol li{ padding: 16px; border-bottom: 1px solid #dddbdb; }
 
 section.download {
@@ -175,7 +175,7 @@ section.portfolio {
 .boundary {
     clear: both;
     padding: 50px 0;
-    width: 940px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .boundary .section_body .project {
@@ -215,7 +215,10 @@ section.portfolio {
     text-align: justify;
 }
 
-.boundary .section_body .project .project_thumb {
+.boundary .section_body .project .project_thumb img {
     background: #eee;
-    width: 38%;
+    background-position: center center;
+    width: 300px;
+    height: 267px;
+    background-size: cover;
 }

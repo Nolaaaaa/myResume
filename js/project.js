@@ -9,7 +9,7 @@
             `<section class="project">
             <div class="project_intro">
                 <header class="project_intro_header clearfix">
-                    <h4 class="project_intro_header_title">${list.title}<span>${list.Etitle}</span></h4>
+                    <h4 class="project_intro_header_title">${list.title}<span>（${list.Etitle}）</span></h4>
                     <ul class="tech-tag-list">${skillLists(list.skills)}</ul>
                 </header>
                 <div class="project_intro_header_content">
