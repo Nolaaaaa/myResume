@@ -21,7 +21,7 @@
             var aTags = this.view.querySelectorAll("nav.menu>ul>li>a") 
             for(let i=0;i<=aTags.length;i++){
                 $(aTags[i]).on('click',(x)=>{
-                    x.preventDefault();  //阻止a标签默认的跳
+                    // x.preventDefault();  //阻止a标签默认的跳
                     let a=x.currentTarget;
                     let href=a.getAttribute("href"); //找到href中的内容，如果href中时一个锚点则返回#siteSkills
                     let element=document.querySelector(href); //找到内容中的锚点对应ID的标签，如对应的锚点名为#siteSkills，则返回<section class=​"skills" id=​"siteWorks">​…​</section>​
