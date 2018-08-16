@@ -25,21 +25,20 @@
                 <img src="${list.image}" alt="${list.imageAlt}">
             </div>
         </section>`
+        ).join('')   
+    } 
+    function skillLists(lists) {
+        console.log(lists)
+        return lists.map(list => 
+            `<li class="tech-tag-list_item ">${list.skill}</li>`
         ).join('') 
-        function skillLists(lists) {
-            return lists.map(list => {
-                `
-                <li class="tech-tag-list_item ">${list.skill}</li>
-                `
-            }).join('') 
-        }
-        
-        function functionLists(lists) {
-            return lists.map(list => {
-                `
-                <li>${list.function}</li>
-                `
-            }).join('') 
-        }
-} 
+    }
+    console.log(skillLists())
+    function functionLists(lists) {
+        return lists.map(list => 
+            `
+            <li>${list.function}</li>
+            `
+        ).join('') 
+    }
 }.call()

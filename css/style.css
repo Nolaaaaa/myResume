@@ -206,6 +206,10 @@ section.download .downloadResume {
     line-height: 1.7;
     text-align: justify;
 }
+.boundary .section_body .project .project_intro .project_intro_header_content .list li{
+    list-style: inherit;
+    margin-left: 15px;
+}
 
 .boundary .section_body .project .project_thumb img {
     background: #eee;
