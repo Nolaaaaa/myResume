@@ -15,7 +15,7 @@
                     {"function":"绘画颜色、画笔大小可选择"},
                     {"function":"具有橡皮擦、清除等绘画功能"},
                     {"function":"绘画内容可本地保存"},
-                    {"function":"可通过鼠标绘画，也可触摸绘画。适配手机端"}
+                    {"function":"可通过鼠标绘画，也可触摸绘画。适配移动端操作"}
                 ],
                 "preview": "https://nolaaaaa.github.io/canvas/index.html",
                 "code": "https://github.com/Nolaaaaa/canvas",
@@ -83,13 +83,31 @@
                 "describe": "一个可以在线使用的 <b>TodoList</b> ，利用 <b>vue-cli + webpack</b> 进行模块化开发，主要功能有:",
                 "functions": [
                     {"function":"登录注册功能，登录成功后才可查看待办事项内容"},
-                    {"function":"通过 <b>LeanCloud</b> 后台管理系统，实现歌曲新建、添加、编辑、删除。"},
+                    {"function":"通过 <b>LeanCloud</b> 后台管理系统，实现歌曲新建、添加、编辑、删除"},
                     {"function":"适配手机端"}
                 ],
                 "preview": "https://nolaaaaa.github.io/TodoList/dist/",
                 "code": "https://github.com/Nolaaaaa/TodoList",
                 "image": "./image/todo.jpg",
                 "imageAlt": "TodoList"
+            },
+            {
+                "title": "快捷导航",
+                "Etitle": "A beautiful navigation page",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"}
+                ],
+                "describe": "使用原生 <b>JS</b> 开发，利用 <b>localStorage</b> 储存的储存功能，实现一个不用动鼠标，通过快捷键即可进入绑定网址的便捷大方美观的导航页面，实现主要功能有:",
+                "functions": [
+                    {"function":"键盘导航功能，点击键盘对应字母即可跳转到对应页面"},
+                    {"function":"可动态编辑保存导航地址"}
+                ],
+                "preview": "https://nolaaaaa.github.io/navigation-page/",
+                "code": "https://github.com/Nolaaaaa/navigation-page",
+                "image": "./image/navigation.jpg",
+                "imageAlt": "Navigation"
             }
         ]
     }

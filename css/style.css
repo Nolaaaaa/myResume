@@ -26,15 +26,14 @@ h3{font-size:22px}
 /*z-index: 1; 堆叠元素，使其在其他元素上方显示*/
 .topNavbar.sticky{ background:white; padding:8px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);color: #3d4451; z-index: 1;   }
 .topNavbar-inner{ padding: 0 16px;}
-.topNavbar .logo{ font-size: 22px; font-family: "Arial black"; padding-right:8px; padding: 2px 0 ; }
-.topNavbar .logo .rs{ color: #e06567; padding-right: 8px; }
-.topNavbar .logo .card{ color: #9a9da2; }
+.topNavbar .logo{ font-size: 22px; font-family: "Arial black";padding: 2px 8px 2px 0 ; }
+.topNavbar .logo .rs{ color: #e06567; }
 .topNavbar nav{ float: right; padding-top: 6px; }
 .topNavbar nav>ul{ list-style: none; margin: 0; padding: 0; }
 .topNavbar nav>ul>li{ float: left; padding-right: 16px; padding-left: 16px;position: relative; }
 .topNavbar a{ float: left; text-decoration: none; }
 /*内置元素a比li的高度高时设置 display: block; 可以解决*/
-.topNavbar nav>ul>li>a{ font-size: 12px; color: inherit;font-weight: bold; padding-bottom: 5px;padding-top: 5px; 
+.topNavbar nav>ul>li>a{ font-size: 14px; color: inherit;font-weight: bold; padding: 4px 0; 
     display: block;position: relative;}
 
 /*当鼠标放上去a标签下面出现一条线的方法如下：
