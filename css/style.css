@@ -31,7 +31,7 @@ h3{font-size:22px}
 .topNavbar .logo .card{ color: #9a9da2; }
 .topNavbar nav{ float: right; padding-top: 6px; }
 .topNavbar nav>ul{ list-style: none; margin: 0; padding: 0; }
-.topNavbar nav>ul>li{ float: left; padding-right: 17px; padding-left: 17px;position: relative; }
+.topNavbar nav>ul>li{ float: left; padding-right: 16px; padding-left: 16px;position: relative; }
 .topNavbar a{ float: left; text-decoration: none; }
 /*内置元素a比li的高度高时设置 display: block; 可以解决*/
 .topNavbar nav>ul>li>a{ font-size: 12px; color: inherit;font-weight: bold; padding-bottom: 5px;padding-top: 5px; 
