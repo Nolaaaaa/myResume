@@ -1,0 +1,54 @@
+/* 打印时隐藏 */
+.noPrint {
+    display:none;
+}
+/*打印时显示*/
+.personal-info-print {
+    display: block;
+    position:relative;
+}
+.online-resume {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+/* 调整样式 */
+body{ background: white; padding: 0;margin: 0;}
+body main { padding:0; margin:0px;}
+main .userCard{box-shadow:none;padding: 0;margin: 0;}
+main .userCard .pictureAndText{padding:10px 0 0 0;background: white;}
+main .userCard .pictureAndText .text{padding: 0;margin: 0}
+main .userCard .pictureAndText .welcome p{padding-bottom: 10px;}
+main .userCard dl dt, main .userCard dl dd{padding: 0}
+section.skills .skills-list{box-shadow:none;background: white;}
+section.skills .skills-list ol li{width: 100%;margin: 0;padding: 40px 0 0 0;} 
+section.skills .skills-list ol{padding: 0px;}
+section.myPortfolio .boundary{padding: 0; margin: 0;}
+section.skills .skills-list ol .progressBar{margin: 5px 0;}
+section.myPortfolio .boundary .section_body .project{
+    padding:0;
+    margin:0;
+    background: red
+}
+section.skills,
+section.portfolio {
+    margin: -50px 0 0 0;
+    padding:0;background: white;
+}
+section.skills {
+    margin-top: 20px;
+}
+section.skills .skills-list h2,
+section.portfolio h2 {
+    text-align: left;
+}
+section.myPortfolio .project {
+    padding:5px 0 0 0;
+}
+section.skills .tech-stack > ul {
+    border-left: none;
+    margin-left: 0;
+}
+section.skills .tech-stack > ul > li li {
+    font-size: 14px;
+}
