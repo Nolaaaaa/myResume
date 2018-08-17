@@ -1,0 +1,8 @@
+BACKGROUND = 'https://i.loli.net/2018/08/17/5b7697f528130.jpg'
+HEAD = 'https://i.loli.net/2018/08/17/5b7698063eb35.jpg'
+VANVAS = 'https://i.loli.net/2018/08/17/5b769817eaa03.jpg'
+QQMUSIC = 'https://i.loli.net/2018/08/17/5b7698277726d.jpg'
+NAVIGATION = 'https://i.loli.net/2018/08/17/5b7698357a838.jpg'
+TODO = 'https://i.loli.net/2018/08/17/5b769849df0d1.jpg'
+WECHAT = 'https://i.loli.net/2018/08/17/5b769859e24c6.jpg'
+YOUZAN = 'https://i.loli.net/2018/08/17/5b76986868ac9.jpg'

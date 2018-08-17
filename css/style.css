@@ -55,7 +55,7 @@ h3{font-size:22px}
 @keyframes muluSlide{ 0%{ width: 0; } 100%{ width: 100%; } }
 @keyframes submenuSlide{ 0%{ margin-right: 100%;  /*他爸爸的100%*/ } 100%{ margin-right: 0%; } }
 
-.banner{ height:515px; background-image: url(../image/background.jpg); background-position: center center;/*背景图居中*/ 
+.banner{ height:515px; background-image: url('https://i.loli.net/2018/08/17/5b7697f528130.jpg'); background-position: center center;/*背景图居中*/ 
     background-size: cover;/*使背景图自己适应div*/ }
 .banner .mask{ height: 515px; background-color: rgba(0, 0, 0, 0.7); }
 

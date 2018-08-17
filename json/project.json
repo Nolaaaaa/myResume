@@ -12,14 +12,14 @@
                 ],
                 "describe": "通过原生 <b>JavaScript + canvas</b> 实现的在线画板，主要功能有:",
                 "functions": [
-                    {"function":"绘画颜色、画笔大小可选择"},
-                    {"function":"具有橡皮擦、清除等绘画功能"},
+                    {"function":"画笔功能：画笔颜色、画笔粗细可选择"},
+                    {"function":"具有橡皮擦、一键清除的功能"},
                     {"function":"绘画内容可本地保存"},
                     {"function":"可通过鼠标绘画，也可触摸绘画。适配移动端操作"}
                 ],
                 "preview": "https://nolaaaaa.github.io/canvas/index.html",
                 "code": "https://github.com/Nolaaaaa/canvas",
-                "image": "./image/canvas.jpg",
+                "image": "https://i.loli.net/2018/08/17/5b769817eaa03.jpg",
                 "imageAlt": "Canvas"
             },
             {
@@ -40,7 +40,7 @@
                 ],
                 "preview": "https://nolaaaaa.github.io/qq-music/",
                 "code": "https://github.com/Nolaaaaa/qq-music",
-                "image": "./image/music.jpg",
+                "image": "https://i.loli.net/2018/08/17/5b7698277726d.jpg",
                 "imageAlt": "QQ music"
             },
             {
@@ -66,7 +66,7 @@
                 ],
                 "preview": "https://nolaaaaa.github.io/youzan/preview/preview.png",
                 "code": "https://github.com/Nolaaaaa/youzan",
-                "image": "./image/youzan.jpg",
+                "image": "https://i.loli.net/2018/08/17/5b76986868ac9.jpg",
                 "imageAlt": "Youzan"
             },
             {
@@ -88,7 +88,7 @@
                 ],
                 "preview": "https://nolaaaaa.github.io/TodoList/dist/",
                 "code": "https://github.com/Nolaaaaa/TodoList",
-                "image": "./image/todo.jpg",
+                "image": "https://i.loli.net/2018/08/17/5b769849df0d1.jpg",
                 "imageAlt": "TodoList"
             },
             {
@@ -106,7 +106,7 @@
                 ],
                 "preview": "https://nolaaaaa.github.io/navigation-page/",
                 "code": "https://github.com/Nolaaaaa/navigation-page",
-                "image": "./image/navigation.jpg",
+                "image": "https://i.loli.net/2018/08/17/5b7698357a838.jpg",
                 "imageAlt": "Navigation"
             }
         ]
