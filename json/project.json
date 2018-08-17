@@ -3,53 +3,11 @@
     "data": {
         "projects": [
             {
-                "title": "待办事项",
-                "Etitle": "A online TodoList",
-                "skills": [
-                    {"skill":"Vue"},
-                    {"skill":"JavaScript"},
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"Webpack"},
-                    {"skill":"LeanCloud"}
-                ],
-                "describe": "一个可以在线使用的 <b>TodoList</b> ，利用 <b>vue-cli + webpack</b> 进行模块化开发，主要功能有:",
-                "functions": [
-                    {"function":"登录注册功能，登录成功后才可查看待办事项内容"},
-                    {"function":"通过 <b>LeanCloud</b> 后台管理系统，实现歌曲新建、添加、编辑、删除。"},
-                    {"function":"适配手机端"}
-                ],
-                "preview": "https://nolaaaaa.github.io/TodoList/dist/",
-                "code": "https://github.com/Nolaaaaa/TodoList",
-                "image": "./image/todo.jpg",
-                "imageAlt": "TodoList"
-            },
-            {
-                "title": "QQ音乐",
-                "Etitle": "QQ music player",
-                "skills": [
-                    {"skill":"JavaScript"},
-                    {"skill":"CSS3"},
-                    {"skill":"Sass"},
-                    {"skill":"HTML5"},
-                    {"skill":"Webpack"}
-                ],
-                "describe": "使用 <b>ES6</b> 语法编写，利用 <b>express + cors</b> 实现跨域从qq音乐官网获取并展示首页，排行榜，搜索等页面。通过懒加载按需加载首页、排行榜、搜索，优化网页性能。运用 <b>HTML5 + css3</b> 实现播放页面，动态播放出歌词，歌词准确提示。利用 <b>Sass</b> 编写 <b>css</b> ，样式代码结构清晰，主要功能有:",
-                "functions": [
-                    {"function":"展示歌曲列表、展示热歌榜歌曲、搜索歌曲。"},
-                    {"function":"具有搜索功能"}
-                ],
-                "preview": "https://nolaaaaa.github.io/qq-music/",
-                "code": "https://github.com/Nolaaaaa/qq-music",
-                "image": "./image/music.jpg",
-                "imageAlt": "QQ music"
-            },
-            {
                 "title": "Canvas画板",
                 "Etitle": "A simple practical canvas",
                 "skills": [
-                    {"skill":"JavaScript"},
                     {"skill":"CSS3"},
+                    {"skill":"JavaScript"},
                     {"skill":"HTML5"}
                 ],
                 "describe": "通过原生 <b>JavaScript + canvas</b> 实现的在线画板，主要功能有:",
@@ -65,13 +23,34 @@
                 "imageAlt": "Canvas"
             },
             {
-                "title": "有赞商城",
-                "Etitle": "Vuejs reconstruct youzan shop store",
+                "title": "QQ音乐",
+                "Etitle": "QQ music player",
                 "skills": [
+                    {"skill":"CSS3"},
+                    {"skill":"Sass"},
+                    {"skill":"HTML5"},
                     {"skill":"JavaScript"},
+                    {"skill":"Webpack"},
+                    {"skill":"Express"}
+                ],
+                "describe": "使用 <b>ES6</b> 语法编写，利用 <b>express + cors</b> 实现跨域从qq音乐官网获取并展示首页，排行榜，搜索等页面。通过懒加载按需加载首页、排行榜、搜索，优化网页性能。运用 <b>HTML5 + css3</b> 实现播放页面，动态播放出歌词，歌词准确提示。利用 <b>Sass</b> 编写 <b>css</b> ，样式代码结构清晰，主要功能有:",
+                "functions": [
+                    {"function":"展示歌曲列表、展示热歌榜歌曲、搜索歌曲。"},
+                    {"function":"具有搜索功能"}
+                ],
+                "preview": "https://nolaaaaa.github.io/qq-music/",
+                "code": "https://github.com/Nolaaaaa/qq-music",
+                "image": "./image/music.jpg",
+                "imageAlt": "QQ music"
+            },
+            {
+                "title": "有赞商城",
+                "Etitle": "Vue reconstruct youzan shop store",
+                "skills": [
                     {"skill":"CSS3"},
                     {"skill":"HTML5"},
-                    {"skill":"Vue"},
+                    {"skill":"Vue-cli"},
+                    {"skill":"JavaScript"},
                     {"skill":"Vue-router"},
                     {"skill":"Vuex"},
                     {"skill":"Swiper"},
@@ -89,6 +68,28 @@
                 "code": "https://github.com/Nolaaaaa/youzan",
                 "image": "./image/youzan.jpg",
                 "imageAlt": "Youzan"
+            },
+            {
+                "title": "待办事项",
+                "Etitle": "A online TodoList",
+                "skills": [
+                    {"skill":"Vue-cli"},
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"Webpack"},
+                    {"skill":"LeanCloud"}
+                ],
+                "describe": "一个可以在线使用的 <b>TodoList</b> ，利用 <b>vue-cli + webpack</b> 进行模块化开发，主要功能有:",
+                "functions": [
+                    {"function":"登录注册功能，登录成功后才可查看待办事项内容"},
+                    {"function":"通过 <b>LeanCloud</b> 后台管理系统，实现歌曲新建、添加、编辑、删除。"},
+                    {"function":"适配手机端"}
+                ],
+                "preview": "https://nolaaaaa.github.io/TodoList/dist/",
+                "code": "https://github.com/Nolaaaaa/TodoList",
+                "image": "./image/todo.jpg",
+                "imageAlt": "TodoList"
             }
         ]
     }

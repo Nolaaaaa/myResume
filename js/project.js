@@ -22,23 +22,30 @@
                 </div>
             </div>
             <div class="project_thumb">
-                <img src="${list.image}" alt="${list.imageAlt}">
+                <img src="${list.image}" alt="${list.imageAlt}" width="356px" height="267px">
             </div>
         </section>`
-        ).join('')   
-    } 
-    function skillLists(lists) {
-        console.log(lists)
-        return lists.map(list => 
-            `<li class="tech-tag-list_item ">${list.skill}</li>`
-        ).join('') 
+        ).join('')    
+        function skillLists(lists) {
+            return lists.map(list => 
+                `<li class="tech-tag-list_item ">${list.skill}</li>`
+            ).join('') 
+        }
+        function functionLists(lists) {
+            return lists.map(list => 
+                `
+                <li>${list.function}</li>
+                `
+            ).join('') 
+        }
     }
-    console.log(skillLists())
-    function functionLists(lists) {
-        return lists.map(list => 
-            `
-            <li>${list.function}</li>
-            `
-        ).join('') 
+    window.onload = function itemlists() {   //window.onload，即，在页面所有的一切都加载完后才执行函数
+        let item = document.querySelectorAll('.tech-tag-list_item')
+        for(let i=0; i < item.length; i++) {
+            let value =  item[i].innerText
+            if(value){
+                item[i].classList.add(`tech-tag-list_${value}`)
+            }
+        }
     }
 }.call()

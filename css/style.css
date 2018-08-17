@@ -129,6 +129,31 @@ section.skills.offset .skills-list ol .progressBar .progress{
 
 section.portfolio { background: #fafafa; padding: 60px 0 60px 0;margin-bottom: 100px; }
 section .boundary { clear: both; padding: 20px 0; max-width: 900px; margin: 0 auto; }
+.boundary .section_body .project { border-top: 2px dashed #ccc; display: flex; justify-content: space-between; margin-top: 25px; padding-top: 35px; }
+.boundary .section_body .project .project_intro { padding: 0 24px 0 0; }
+.boundary .section_body .project .project_intro .project_intro_header { position: relative; margin-bottom: 8px; line-height: 1.3; text-align: left; }
+.boundary .section_body .project .project_intro .project_intro_header .project_intro_header_title { font-size: 1.2em; font-weight: bold; display: inline; padding-bottom: 3px; }
+.boundary .section_body .project .project_intro .project_intro_header .tech-tag-list .tech-tag-list_item { height: 18px; line-height: 18px; padding: 0 4px;margin: 0 2px; border-radius: 4px; display: inline-block; vertical-align: middle;font-family: 'Lucida Grande', arial; color: #fff; }
+.tech-tag-list_Vue-cli{background: #25AF02}
+.tech-tag-list_JavaScript{background: rgb(84, 210, 248)}
+.tech-tag-list_CSS3{background: rgb(243, 123, 83)}
+.tech-tag-list_HTML5{background: rgb(248, 207, 26)}
+.tech-tag-list_Vue-router{background: rgb(103, 172, 86)}
+.tech-tag-list_Vuex{background: #49C576}
+.tech-tag-list_Swiper{background: rgb(175, 92, 25)}
+.tech-tag-list_RAP{background: #E59427}
+.tech-tag-list_Mock{background: #628E73}
+.tech-tag-list_Webpack{background: rgb(187, 66, 35)}
+.tech-tag-list_Sass{background: #CC6249}
+.tech-tag-list_LeanCloud{background: rgb(38, 150, 129)}
+.tech-tag-list_Express{background: rgb(49, 129, 221)}
+.boundary .section_body .project .project_intro .project_intro_header_content { line-height: 1.7; text-align: justify; }
+.boundary .section_body .project .project_intro .project_intro_header_content .project_intro_links {color: rgb(3, 27, 243); font-weight:bold;}
+.boundary .section_body .project .project_intro .project_intro_header_content .list li{ list-style: inherit; margin-left: 15px; }
+.boundary .section_body .project .project_thumb img { background: #eee; background-position: center center; height: 267px; background-size: cover; }
+
+
+
 section.portfolio .slides .swiper-container { max-width: 900px; height: 380px; }
 section.portfolio .slides .swiper-slide{ background: #dedede; }
 /*怎么让自己设置的样式覆盖引入的其他的样式？不要用importent,把自己的样式放到其他样式之后就好了*/
@@ -167,53 +192,4 @@ section.download .downloadResume {
     -webkit-border-radius: 4px;
     border-radius: 4px;
     opacity: 0.8;
-}
-
-.boundary .section_body .project {
-    border-top: 2px dashed #ccc;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-    padding-top: 35px;
-}
-.boundary .section_body .project .project_intro {
-    padding: 0 24px 0 0;
-}
-.boundary .section_body .project .project_intro .project_intro_header {
-    position: relative;
-    margin-bottom: 8px;
-    line-height: 1.3;
-    text-align: left;
-}
-.boundary .section_body .project .project_intro .project_intro_header .project_intro_header_title {
-    font-size: 1.2em;
-    font-weight: bold;
-    display: inline;
-    padding-bottom: 3px;
-}
-.boundary .section_body .project .project_intro .project_intro_header .tech-tag-list .tech-tag-list_item {
-    height: 24px;
-    line-height: 24px;
-    padding: 0 6px;
-    border-radius: 3px;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0.75em;
-    font-family: 'Lucida Grande', arial;
-    color: #fff;
-}
-.boundary .section_body .project .project_intro .project_intro_header_content {
-    line-height: 1.7;
-    text-align: justify;
-}
-.boundary .section_body .project .project_intro .project_intro_header_content .list li{
-    list-style: inherit;
-    margin-left: 15px;
-}
-
-.boundary .section_body .project .project_thumb img {
-    background: #eee;
-    background-position: center center;
-    height: 267px;
-    background-size: cover;
 }
