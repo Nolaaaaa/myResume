@@ -36,11 +36,6 @@ h3{font-size:22px}
 /*内置元素a比li的高度高时设置 display: block; 可以解决*/
 .topNavbar nav>ul>li>a{ font-size: 12px; color: inherit;font-weight: bold; padding-bottom: 5px;padding-top: 5px; 
     display: block;position: relative;}
-@media(max-width:500px){
-    .topNavbar nav>ul>li{ margin-right:1px; margin-left:1px;}
-    .topNavbar nav>ul>li>a{font-size: 10px;padding-bottom: 2px;padding-top: 2px; }
-    .topNavbar .logo{ font-size: 18px; }
-}
 
 /*当鼠标放上去a标签下面出现一条线的方法如下：
     .topNavbar nav>ul>li>a{
@@ -85,6 +80,7 @@ main .userCard dl dt, main .userCard dl dd{ float: left; width: 50%;/*和上面�
     line-height: 22px;/*设置固定的行高解决dd dt字体大小不一样的问题*/ padding: 5px 0;/*设置上下元素的行高*/ }  
 main .userCard dl dt{ font-weight: bold;    /*字体变粗*/ color: black; }
 main .userCard dl dd{ color: #9da0a7; }
+main .userCard dl dd a{ color: #044cf3; }
 main .userCard .media { background: #e6686a; text-align:center; }
 main .userCard .media a{ display: inline-block; width: 40px; padding: 5px 0; border-radius: 50%; 
     margin: 16px; transition: all 0.5s; text-align: center; }
@@ -102,14 +98,13 @@ main .downloadResume:hover{ box-shadow: 0px 2px 8px 0px rgba(34, 34, 34, 0.5); /
 main .selfIntroduction{ margin: 50px 40px 100px; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 18px; 
     font-size: 18px; }
 
-section h2{ text-align: center; margin: 20px 0 20px; }
+section h2{ text-align: center;}
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
 section.skills .skills-list{ max-width: 900px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
-    margin: 10px auto 100px auto; }
+    margin: 10px auto 100px auto; padding: 60px 0 60px;}
 section.skills .skills-list ol{ padding:40px 40px 10px 40px; }
 section.skills .skills-list ol li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
 /*将宽度设低，然后将奇数个li元素左浮动，偶数个元素右浮动*/
-@media(max-width:500px){ section.skills .skills-list ol li{width: 100%; } }
 section.skills .skills-list ol li:nth-child(obb){  /*奇数个li元素*/ float: left; }
 section.skills .skills-list ol li:nth-child(even){  /*偶数个li元素*/ float:right; }
 section.skills .skills-list ol .progressBar{ height: 5px; background: #fae1e1; border-radius: 3px;  margin:4px 0 40px;overflow:hidden }
@@ -164,7 +159,11 @@ section.portfolio{ text-align: center; }
 section.portfolio .slides{ width: 100%; display: inline-block; }
 
 section.message{ margin: 0px auto 50px auto; }
-section.message .postMessage{ max-width: 900px; margin: 30px auto; text-align: center;}
+section.message .postMessage{ max-width: 900px; margin: 30px auto; text-align: left;}
+section.message .postMessage div{margin-bottom: 5px;display: inline-block}
+section.message .postMessage input{border-radius: 4px;border:1px solid #b8babd}
+section.message .postMessage .submit{background: white;width: 54px; line-height: 16px;}
+section.message .postMessage .submit:hover,:focus{ background: #fff; border-color: #409eff; color: #409eff; }
 section.message .postMessage .content{ display: inline-block; }
 section.message ol{ background: #f4f4f4; max-width: 900px;; margin: 0 auto; list-style: none; border-top: 1px solid #dddbdb; }
 section.message ol li{ padding: 16px; border-bottom: 1px solid #dddbdb; }
@@ -192,4 +191,14 @@ section.download .downloadResume {
     -webkit-border-radius: 4px;
     border-radius: 4px;
     opacity: 0.8;
+}
+@media(max-width:500px){
+    .topNavbar nav>ul>li{ margin-right:1px; margin-left:1px;}
+    .topNavbar nav>ul>li>a{font-size: 10px;padding-bottom: 2px;padding-top: 2px; }
+    .topNavbar .logo{ font-size: 18px; }
+    main .userCard .media{display: none}
+    main .userCard .picture{display: none} 
+    section.skills .skills-list ol li{width: 100%; } 
+    .boundary .section_body .project { display: inline-block;}
+    .project_intro { margin: 0 12px; }
 }
