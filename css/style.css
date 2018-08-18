@@ -79,7 +79,7 @@ main .userCard dl dt, main .userCard dl dd{ float: left; width: 50%;/*和上面�
     line-height: 22px;/*设置固定的行高解决dd dt字体大小不一样的问题*/ padding: 5px 0;/*设置上下元素的行高*/ }  
 main .userCard dl dt{ font-weight: bold;    /*字体变粗*/ color: black; }
 main .userCard dl dd{ color: #9da0a7; }
-main .userCard dl dd a{ color: #044cf3; }
+main .userCard dl dd.personMessage{ color: #044cf3; cursor: pointer;}
 main .userCard .media { background: #e6686a; text-align:center; }
 main .userCard .media a{ display: inline-block; width: 40px; padding: 5px 0; border-radius: 50%; 
     margin: 16px; transition: all 0.5s; text-align: center; }
