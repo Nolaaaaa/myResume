@@ -7,13 +7,13 @@ ul li { list-style: none; }
 h1 h2 h3 h4 h5 h6 h7{ font-weight: normal; }
 .icon { width:1px; height:1px; vertical-align: -0.5px; fill: currentColor; overflow: hidden; }
 *{ margin: 0px; padding: 0px;  }
+.onPrint { display:none; }
 hr{ height: 0; border: none; border-top: 1px solid #dedede; }
 /*clear: both;这个css设置的作用是可以清除元素在设置float时的的浮动（设置位置：子元素的父级元素）*/ 
 .clearfix::after{ content: ''; display: block; clear: both;}
 h1{font-size:26px}
 h2{font-size:24px}
 h3{font-size:22px}
-
 [data-x].offset{ transform: translateY(40px); }
 [data-x]{ transform: translateY(0px); transition: all 1s; }
 
@@ -167,37 +167,6 @@ section.message .postMessage .content{ display: inline-block; }
 section.message ol{ max-width: 900px;; margin: 0 auto; list-style: none; border-top: 1px dashed #ccc;}
 section.message ol li{ padding: 16px 16px 16px 0; border-bottom: 1px dashed #ccc; }
 
-section.download {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    z-index: 1;
-}
-section.download .downloadResume {
-    display: inline-block;
-    font-size: 14px;
-    padding: 18px 22px 12px;
-    color: #f4f4f4;
-    font-weight: bold;
-    writing-mode: vertical-lr; /* 竖起来显示 */
-    letter-spacing:1px;
-    background: #cf5d5f;
-    font-family: Arial, sans-serif;
-    border: solid 0 #e3edf4;
-    border-bottom: 2px solid #cf5d5f;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    opacity: 0.8;
-}
-@media(max-width:500px){
-    .topNavbar nav>ul>li{ margin-right:1px; margin-left:1px;}
-    .topNavbar nav>ul>li>a{font-size: 10px;padding-bottom: 2px;padding-top: 2px; }
-    .topNavbar .logo{ font-size: 18px; }
-    main .userCard .media{display: none}
-    main .userCard .picture{display: none} 
-    section.skills .skills-list ol li{width: 100%; } 
-    .boundary .section_body .project { display: inline-block;}
-    .project_intro { margin: 0 12px; }
-}
+section.download { position: fixed; top: 50%; transform: translateY(-50%); right: 0; z-index: 1; }
+section.download .downloadResume { display: inline-block; font-size: 14px; padding: 18px 22px 12px; color: #f4f4f4; font-weight: bold; writing-mode: vertical-lr; /* 竖起来显示 */ letter-spacing:1px; background: #cf5d5f; font-family: Arial, sans-serif; border: solid 0 #e3edf4; border-bottom: 2px solid #cf5d5f; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; opacity: 0.8; }
+@media(max-width:500px){ .topNavbar nav>ul>li{ margin-right:1px; margin-left:1px;} .topNavbar nav>ul>li>a{font-size: 10px;padding-bottom: 2px;padding-top: 2px; } .topNavbar .logo{ font-size: 18px; } main .userCard .media{display: none} main .userCard .picture{display: none} section.skills .skills-list ol li{width: 100%; } .boundary .section_body .project { display: inline-block;} .project_intro { margin: 0 12px; } }

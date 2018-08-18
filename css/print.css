@@ -1,8 +1,7 @@
 /* 打印时隐藏 */
 .noPrint { display:none; }
 /*打印时显示*/
-.personal-info-print { display: block; position:relative; }
-.online-resume { position:absolute; top: 0; right: 0; }
+.onPrint { display: block; position:relative; }
 /* 调整样式 */
 body{ background: white; padding: 0;margin: 0;}
 body main { padding:0; margin:0px;}
