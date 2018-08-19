@@ -107,6 +107,45 @@
                 "code": "https://github.com/Nolaaaaa/navigation-page",
                 "image": "https://i.loli.net/2018/08/17/5b7698357a838.jpg",
                 "imageAlt": "Navigation"
+            },
+            {
+                "title": "一只皮卡丘",
+                "Etitle": "A cute pikachu",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"Prism"}
+                ],
+                "describe": "使用CSS3动态在HTML页面动态绘制一个皮卡丘，并添加快中慢调速按钮， <b>setTimeout + pre标签</b> 动态向页面添加文本， prism.js 实现代码高亮。实现主要功能有:",
+                "functions": [
+                    {"function":"HTML页面代码的代码实现高亮"},
+                    {"function":"文本在HTML页面动态的添加"},
+                    {"function":"HTML页面动态代码可以进行快中慢调速"}
+                ],
+                "preview": "https://nolaaaaa.github.io/myDemo/pikachu/dynamic",
+                "code": "https://github.com/Nolaaaaa/myDemo/tree/master/pikachu/dynamic",
+                "image": "https://i.loli.net/2018/08/19/5b794f5515d60.png",
+                "imageAlt": "pikachu"
+            },
+            {
+                "title": "动态简历",
+                "Etitle": "A ynamic resume",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"Prism"}
+                ],
+                "describe": "实现一个动态简历，利用 <b>setTimeout + pre标签</b> 动态向页面添加文本。使用 prism.js 实现代码高亮。实现主要功能有:",
+                "functions": [
+                    {"function":"文本在页面动态的添加"},
+                    {"function":"页面上代码的代码实现高亮"}
+                ],
+                "preview": "https://nolaaaaa.github.io/ynamic-resume/",
+                "code": "https://github.com/Nolaaaaa/ynamic-resume",
+                "image": "https://i.loli.net/2018/08/19/5b79523fe1c35.png",
+                "imageAlt": "ynamic resume"
             }
         ]
     }
