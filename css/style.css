@@ -73,7 +73,7 @@ main .userCard .welcome{ background: #e6686a; color:white; padding: 4px 16px 4px
 main .userCard .welcome .triangle{ border:10px solid transparent; width: 0px;/*为了保险起见*/ border-left-color: #e6686a; 
     border-top-width: 0px;/*将边框上步的宽度去掉*/ position: absolute;left: 4px; top: 100%; /*使三角形移动到目标位置*/ } 
 /*更多形状的画法可以搜索css tricks shapes*/
-main .userCard .text h1{ margin-top: 18px; margin-bottom: 6px; }
+main .userCard .text h2{ margin-top: 18px; margin-bottom: 6px; }
 main .userCard .text hr{ margin: 20px 0; }
 main .userCard dl dt, main .userCard dl dd{ float: left; width: 50%;/*和上面的那个width相加等于100%即可以做到换行*/ 
     line-height: 22px;/*设置固定的行高解决dd dt字体大小不一样的问题*/ padding: 5px 0;/*设置上下元素的行高*/ }  
@@ -101,13 +101,13 @@ section h2{ text-align: center;}
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
 section.skills .skills-list{ max-width: 900px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
     margin: 10px auto 100px auto; padding: 60px 0 60px;}
-section.skills .skills-list ol{ padding:40px 40px 10px 40px; }
-section.skills .skills-list ol li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
+section.skills .skills-list ol.noPrint{ padding:40px 40px 10px 40px; }
+section.skills .skills-list ol.noPrint>li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
 /*将宽度设低，然后将奇数个li元素左浮动，偶数个元素右浮动*/
-section.skills .skills-list ol li:nth-child(obb){  /*奇数个li元素*/ float: left; }
-section.skills .skills-list ol li:nth-child(even){  /*偶数个li元素*/ float:right; }
-section.skills .skills-list ol .progressBar{ height: 5px; background: #fae1e1; border-radius: 3px;  margin:4px 0 40px;overflow:hidden }
-section.skills .skills-list ol .progressBar .progress{ background: #e6686a; width: 50%; /*默认进度条的长度，如需不一样，可另外单独加ID*/ 
+section.skills .skills-list ol.noPrint li:nth-child(obb){  /*奇数个li元素*/ float: left; }
+section.skills .skills-list ol.noPrint li:nth-child(even){  /*偶数个li元素*/ float:right; }
+section.skills .skills-list ol.noPrint .progressBar{ height: 5px; background: #fae1e1; border-radius: 3px;  margin:4px 0 40px;overflow:hidden }
+section.skills .skills-list ol.noPrint .progressBar .progress{ background: #e6686a; width: 50%; /*默认进度条的长度，如需不一样，可另外单独加ID*/ 
     height: 100%; border-radius: 3px;transform: translateX(0%);transition: all 1s;}
 /*让页面滑到skill-list的时候，技能条才动画出现。第一步：使它在元素有offset属性时translateX(-100%)使消失，
 第二步：使它在元素有offset属性时translateX(-100%)使出现，第三步：在父级元素progressBar上添加overflow:hidden,防止溢出*/

@@ -60,7 +60,6 @@
                 "describe": "利用 <b>vue-cli + webpack</b> 模块化开发，通过 <b>RAP + Mock</b> 动态生成模拟数据，轮播采用<b>Swiper</b>组件，主要功能有:",
                 "functions": [
                     {"function":"数据获取按需加载（懒加载）"},
-                    {"function":"商品详情页商品可选择添加进购物车"},
                     {"function":"购物车页通过全选、多选、单选的方式进行结算或编辑删除"},
                     {"function":"地址管理可新增、保存、删除、编辑"}
                 ],
