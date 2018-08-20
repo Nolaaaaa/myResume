@@ -3,26 +3,6 @@
     "data": {
         "projects": [
             {
-                "title": "Canvas画板",
-                "Etitle": "A simple practical canvas",
-                "skills": [
-                    {"skill":"CSS3"},
-                    {"skill":"JavaScript"},
-                    {"skill":"HTML5"}
-                ],
-                "describe": "通过原生 <b>JavaScript + canvas</b> 实现的在线画板，主要功能有:",
-                "functions": [
-                    {"function":"画笔功能：画笔颜色、画笔粗细可选择"},
-                    {"function":"具有橡皮擦、一键清除的功能"},
-                    {"function":"绘画内容可本地保存"},
-                    {"function":"可通过鼠标绘画，也可触摸绘画。适配移动端操作"}
-                ],
-                "preview": "https://nolaaaaa.github.io/canvas/index.html",
-                "code": "https://github.com/Nolaaaaa/canvas",
-                "image": "https://i.loli.net/2018/08/17/5b769817eaa03.jpg",
-                "imageAlt": "Canvas"
-            },
-            {
                 "title": "有赞商城",
                 "Etitle": "Vue reconstruct youzan shop store",
                 "skills": [
@@ -68,6 +48,45 @@
                 "imageAlt": "QQ music"
             },
             {
+                "title": "动态简历",
+                "Etitle": "A ynamic resume",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"Prism"}
+                ],
+                "describe": "实现一个动态简历，利用 <b>setTimeout + pre标签</b> 动态向页面添加文本。使用 prism.js 实现代码高亮。实现主要功能有:",
+                "functions": [
+                    {"function":"文本在页面动态的添加"},
+                    {"function":"页面上代码的代码实现高亮"}
+                ],
+                "preview": "https://nolaaaaa.github.io/ynamic-resume/",
+                "code": "https://github.com/Nolaaaaa/ynamic-resume",
+                "image": "https://i.loli.net/2018/08/19/5b795c1ea0b15.jpg",
+                "imageAlt": "ynamic resume"
+            },
+            {
+                "title": "Canvas画板",
+                "Etitle": "A simple practical canvas",
+                "skills": [
+                    {"skill":"CSS3"},
+                    {"skill":"JavaScript"},
+                    {"skill":"HTML5"}
+                ],
+                "describe": "通过原生 <b>JavaScript + canvas</b> 实现的在线画板，主要功能有:",
+                "functions": [
+                    {"function":"画笔功能：画笔颜色、画笔粗细可选择"},
+                    {"function":"具有橡皮擦、一键清除的功能"},
+                    {"function":"绘画内容可本地保存"},
+                    {"function":"可通过鼠标绘画，也可触摸绘画。适配移动端操作"}
+                ],
+                "preview": "https://nolaaaaa.github.io/canvas/index.html",
+                "code": "https://github.com/Nolaaaaa/canvas",
+                "image": "https://i.loli.net/2018/08/17/5b769817eaa03.jpg",
+                "imageAlt": "Canvas"
+            },
+            {
                 "title": "待办事项",
                 "Etitle": "A online TodoList",
                 "skills": [
@@ -88,25 +107,6 @@
                 "code": "https://github.com/Nolaaaaa/TodoList",
                 "image": "https://i.loli.net/2018/08/17/5b769849df0d1.jpg",
                 "imageAlt": "TodoList"
-            },
-            {
-                "title": "动态简历",
-                "Etitle": "A ynamic resume",
-                "skills": [
-                    {"skill":"JavaScript"},
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"Prism"}
-                ],
-                "describe": "实现一个动态简历，利用 <b>setTimeout + pre标签</b> 动态向页面添加文本。使用 prism.js 实现代码高亮。实现主要功能有:",
-                "functions": [
-                    {"function":"文本在页面动态的添加"},
-                    {"function":"页面上代码的代码实现高亮"}
-                ],
-                "preview": "https://nolaaaaa.github.io/ynamic-resume/",
-                "code": "https://github.com/Nolaaaaa/ynamic-resume",
-                "image": "https://i.loli.net/2018/08/19/5b795c1ea0b15.jpg",
-                "imageAlt": "ynamic resume"
             }, 
             {
                 "title": "快捷导航",
@@ -137,13 +137,49 @@
                 ],
                 "describe": "一个在线简历编辑器，实现了简历在线编辑，使用vue-cli + webpack进行模块化开发，使用scss进行css预处理编写。实现主要功能有:",
                 "functions": [
-                    {"function":"技能区、项目区的可编辑"},
-                    {"function":"信息编辑时立即生成简历"}
+                    {"function":"技能区、项目区的可编辑，信息编辑时立即生成简历"}
                 ],
                 "preview": "https://nolaaaaa.github.io/resume-maker/dist/",
                 "code": "",
-                "image": "https://i.loli.net/2018/08/19/5b7966e31ee16.png",
-                "imageAlt": "resume-maker"
+                "image": "#",
+                "imageAlt": ""
+            },
+            {
+                "title": "一只皮卡丘",
+                "Etitle": "A cute pikachu",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"Prism"}
+                ],
+                "describe": "使用CSS3动态在HTML页面动态绘制一个皮卡丘，并添加快中慢调速按钮， <b>setTimeout + pre标签</b> 动态向页面添加文本， <b>sprism.js</b> 实现代码高亮。实现主要功能有:",
+                "functions": [
+                    {"function":"代码在HTML页面动态的出现，页面动态代码可以进行快中慢调速、代码实现高亮"}
+                ],
+                "preview": "https://nolaaaaa.github.io/myDemo/pikachu/dynamic",
+                "code": "https://github.com/Nolaaaaa/myDemo/tree/master/pikachu/dynamic",
+                "image": "#",
+                "imageAlt": ""
+            },
+            {
+                "title": "个人简历",
+                "Etitle": "A web resume",
+                "skills": [
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"jQuery"},
+                    {"skill":"Tween"},
+                    {"skill":"LeanCloud"}
+                ],
+                "describe": "使用<b>jQuery</b>进行开发，留言版数据库使用<b>LeanCloud</b>储存获取数据，页面动画用<b>Tween.js</b>实现:",
+                "functions": [
+                    {"function":"实现页面动画功能，实现留言功能"}
+                ],
+                "preview": "https://nolaaaaa.github.io/myResume/index.html",
+                "code": "https://github.com/Nolaaaaa/myResume",
+                "image": "#",
+                "imageAlt": ""
             }
         ]
     }
