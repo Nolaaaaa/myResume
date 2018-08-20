@@ -23,27 +23,6 @@
                 "imageAlt": "Canvas"
             },
             {
-                "title": "QQ音乐",
-                "Etitle": "QQ music player",
-                "skills": [
-                    {"skill":"CSS3"},
-                    {"skill":"Sass"},
-                    {"skill":"HTML5"},
-                    {"skill":"JavaScript"},
-                    {"skill":"Webpack"},
-                    {"skill":"Express"}
-                ],
-                "describe": "使用 <b>ES6</b> 语法编写，利用 <b>express + cors</b> 实现跨域从qq音乐官网获取并展示首页，排行榜，搜索等页面。通过懒加载按需加载首页、排行榜、搜索，优化网页性能。运用 <b>HTML5 + css3</b> 实现播放页面，动态播放出歌词，歌词准确提示。利用 <b>Sass</b> 编写 <b>css</b> ，样式代码结构清晰，主要功能有:",
-                "functions": [
-                    {"function":"展示歌曲列表、展示热歌榜歌曲、搜索歌曲。"},
-                    {"function":"具有搜索功能"}
-                ],
-                "preview": "https://nolaaaaa.github.io/qq-music/",
-                "code": "https://github.com/Nolaaaaa/qq-music",
-                "image": "https://i.loli.net/2018/08/17/5b7698277726d.jpg",
-                "imageAlt": "QQ music"
-            },
-            {
                 "title": "有赞商城",
                 "Etitle": "Vue reconstruct youzan shop store",
                 "skills": [
@@ -69,6 +48,26 @@
                 "imageAlt": "Youzan"
             },
             {
+                "title": "QQ音乐",
+                "Etitle": "QQ music player",
+                "skills": [
+                    {"skill":"CSS3"},
+                    {"skill":"Sass"},
+                    {"skill":"HTML5"},
+                    {"skill":"JavaScript"},
+                    {"skill":"Webpack"},
+                    {"skill":"Express"}
+                ],
+                "describe": "使用 <b>ES6</b> 语法编写，利用 <b>express + cors</b> 实现跨域从qq音乐官网获取并展示首页，排行榜，搜索等页面。通过懒加载按需加载首页、排行榜、搜索，优化网页性能。运用 <b>HTML5 + css3</b> 实现播放页面，动态播放出歌词，歌词准确提示。利用 <b>Sass</b> 编写 <b>css</b> ，样式代码结构清晰，主要功能有:",
+                "functions": [
+                    {"function":"展示歌曲列表、展示热歌榜歌曲、搜索歌曲。"}
+                ],
+                "preview": "https://nolaaaaa.github.io/qq-music/",
+                "code": "https://github.com/Nolaaaaa/qq-music",
+                "image": "https://i.loli.net/2018/08/17/5b7698277726d.jpg",
+                "imageAlt": "QQ music"
+            },
+            {
                 "title": "待办事项",
                 "Etitle": "A online TodoList",
                 "skills": [
@@ -91,6 +90,25 @@
                 "imageAlt": "TodoList"
             },
             {
+                "title": "动态简历",
+                "Etitle": "A ynamic resume",
+                "skills": [
+                    {"skill":"JavaScript"},
+                    {"skill":"CSS3"},
+                    {"skill":"HTML5"},
+                    {"skill":"Prism"}
+                ],
+                "describe": "实现一个动态简历，利用 <b>setTimeout + pre标签</b> 动态向页面添加文本。使用 prism.js 实现代码高亮。实现主要功能有:",
+                "functions": [
+                    {"function":"文本在页面动态的添加"},
+                    {"function":"页面上代码的代码实现高亮"}
+                ],
+                "preview": "https://nolaaaaa.github.io/ynamic-resume/",
+                "code": "https://github.com/Nolaaaaa/ynamic-resume",
+                "image": "https://i.loli.net/2018/08/19/5b795c1ea0b15.jpg",
+                "imageAlt": "ynamic resume"
+            }, 
+            {
                 "title": "快捷导航",
                 "Etitle": "A beautiful navigation page",
                 "skills": [
@@ -109,43 +127,23 @@
                 "imageAlt": "Navigation"
             },
             {
-                "title": "一只皮卡丘",
-                "Etitle": "A cute pikachu",
+                "title": "简历制作器",
+                "Etitle": "Make your resume ",
                 "skills": [
                     {"skill":"JavaScript"},
                     {"skill":"CSS3"},
                     {"skill":"HTML5"},
-                    {"skill":"Prism"}
+                    {"skill":"Vue-cli"}
                 ],
-                "describe": "使用CSS3动态在HTML页面动态绘制一个皮卡丘，并添加快中慢调速按钮， <b>setTimeout + pre标签</b> 动态向页面添加文本， prism.js 实现代码高亮。实现主要功能有:",
+                "describe": "一个在线简历编辑器，实现了简历在线编辑，使用vue-cli + webpack进行模块化开发，使用scss进行css预处理编写。实现主要功能有:",
                 "functions": [
-                    {"function":"HTML页面代码的代码实现高亮"},
-                    {"function":"文本在HTML页面动态的添加"},
-                    {"function":"HTML页面动态代码可以进行快中慢调速"}
+                    {"function":"技能区、项目区的可编辑"},
+                    {"function":"信息编辑时立即生成简历"}
                 ],
-                "preview": "https://nolaaaaa.github.io/myDemo/pikachu/dynamic",
-                "code": "https://github.com/Nolaaaaa/myDemo/tree/master/pikachu/dynamic",
-                "image": "https://i.loli.net/2018/08/19/5b795c92cb63d.jpg",
-                "imageAlt": "pikachu"
-            },
-            {
-                "title": "动态简历",
-                "Etitle": "A ynamic resume",
-                "skills": [
-                    {"skill":"JavaScript"},
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"Prism"}
-                ],
-                "describe": "实现一个动态简历，利用 <b>setTimeout + pre标签</b> 动态向页面添加文本。使用 prism.js 实现代码高亮。实现主要功能有:",
-                "functions": [
-                    {"function":"文本在页面动态的添加"},
-                    {"function":"页面上代码的代码实现高亮"}
-                ],
-                "preview": "https://nolaaaaa.github.io/ynamic-resume/",
-                "code": "https://github.com/Nolaaaaa/ynamic-resume",
-                "image": "https://i.loli.net/2018/08/19/5b795c1ea0b15.jpg",
-                "imageAlt": "ynamic resume"
+                "preview": "https://nolaaaaa.github.io/resume-maker/dist/",
+                "code": "",
+                "image": "https://i.loli.net/2018/08/19/5b7966e31ee16.png",
+                "imageAlt": "resume-maker"
             }
         ]
     }
