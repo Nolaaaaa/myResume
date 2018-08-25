@@ -1,5 +1,5 @@
 !function() {
-    fetch('/json/project.json')   
+    fetch('./json/project.json')   
         .then(response => response.json()) 
         .then(json => json.data.projects)
         .then(renderProject)   
