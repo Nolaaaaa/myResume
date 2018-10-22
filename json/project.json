@@ -103,8 +103,8 @@
                     {"function":"通过 <b>LeanCloud</b> 后台管理系统，实现歌曲新建、添加、编辑、删除"},
                     {"function":"适配手机端"}
                 ],
-                "preview": "https://nolaaaaa.github.io/TodoList/dist/",
-                "code": "https://github.com/Nolaaaaa/TodoList",
+                "preview": "https://nolaaaaa.github.io/tode/dist/",
+                "code": "https://github.com/Nolaaaaa/todo",
                 "image": "https://i.loli.net/2018/08/17/5b769849df0d1.jpg",
                 "imageAlt": "TodoList"
             }, 
@@ -157,8 +157,8 @@
                 "functions": [
                     {"function":"代码在HTML页面动态的出现，页面动态代码可以进行快中慢调速、代码实现高亮"}
                 ],
-                "preview": "https://nolaaaaa.github.io/myDemo/pikachu/dynamic",
-                "code": "https://github.com/Nolaaaaa/myDemo/tree/master/pikachu/dynamic",
+                "preview": "https://nolaaaaa.github.io/demo/pikachu/dynamic",
+                "code": "https://github.com/Nolaaaaa/demo/tree/master/pikachu/dynamic",
                 "image": "#",
                 "imageAlt": ""
             },
@@ -176,8 +176,8 @@
                 "functions": [
                     {"function":"实现页面动画功能，实现留言功能"}
                 ],
-                "preview": "https://nolaaaaa.github.io/myResume/index.html",
-                "code": "https://github.com/Nolaaaaa/myResume",
+                "preview": "https://nolaaaaa.github.io/resume/index.html",
+                "code": "https://github.com/Nolaaaaa/resume",
                 "image": "#",
                 "imageAlt": ""
             }
