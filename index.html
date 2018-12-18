@@ -1,209 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Nola's Personal resume</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css"> -->
-    <link rel="stylesheet" href="./css/loading.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/print.css" media="print">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Nola's Personal resume</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css"> -->
+  <link rel="stylesheet" href="./css/loading.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/print.css" media="print">
 </head>
-<body>    
-    <div id="siteWelcome" class="siteWelcome active">
-        <div class="loading"></div>
+
+<body>
+  <!-- loading  -->
+  <div id="siteWelcome" class="siteWelcome active"> <div class="loading"></div> </div>
+
+  <!-- topBar -->
+  <div class="topNavbar noPrint" id="topNavbar">
+    <div class="topNavbar-inner clearfix">
+      <!--不在class名字后加上一个clearfix的话，div会不见 -->
+      <a href="#" alt="logo" class="logo"><span class="rs">Nola</span></a>
+      <nav class="menu"><ul class="clearfix">
+        <li><a href="#siteAbout">关于</a></li>
+        <li><a href="#siteWorks">作品</a></li>
+        <li><a href="#siteSkills">技能</a></li>
+        <li><a href="#siteMessage">留言</a></li>
+      </ul> </nav>
     </div>
-    <div class="topNavbar noPrint" id="topNavbar">  
-        <div class="topNavbar-inner clearfix">   <!--不在class名字后加上一个clearfix的话，div会不见 -->
-            <a href="#" alt="logo" class="logo">
-                <span class="rs">Nola</span>
-            </a>
-            <nav class="menu">
-                <ul class="clearfix">
-                    <li><a href="#siteAbout">关于</a></li>
-                    <li ><a href="#siteWorks" >作品</a>
-                        <!-- <ul class="submenu">
-                            <li>作品1</li>
-                            <li>作品2</li>
-                            <li>作品3</li>
-                        </ul> -->
-                    </li>
-                    <li >
-                        <a href="#siteSkills">技能</a>
-                    </li>
-                    <li><a href="#siteMessage">留言</a></li>
-                    <!-- <li><a href="https://nolaaaaa.github.io" target="_blank">博客</a></li>
-                    <li><a href="https://github.com/Nolaaaaa" target="_blank">github</a></li> -->
-                    <!-- <li><a href="#">其他</a></li> -->
-                </ul>
-            </nav>
+  </div>
+  <div class="banner noPrint"><div class="mask"></div></div>    <!--设置透明的黑色-->
+
+  <!-- 个人信息 -->
+  <main data-x class="about" id="siteAbout">
+    <div class="userCard">
+      <div class="pictureAndText clearfix">
+        <div class="picture noPrint"><img src="#" width="299px" height="347px" alt="头像"></div>
+        <div class="text">
+          <span class="welcome">前端开发工程师<span class="triangle"></span></span>
+          <h2>名字</h2><p>性别，年龄，学历学校</p>
+          <hr class="noPrint">
+          <dl>
+            <dt>手机</dt><dd>电话</dd>
+            <dt>微信</dt><dd class="personMessage"><a href="https://i.loli.net/2018/08/17/5b769859e24c6.jpg" target="_blank">微信</dd>
+            <dt>邮箱</dt><dd class="personMessage">邮箱</dd>
+            <dt>博客</dt><dd class="personMessage"><a href="https://nolaaaaa.github.io" target="_blank">博客</dd>
+            <dt>Github</dt><dd class="personMessage"><a href="https://github.com/Nolaaaaa" target="_blank">github</dd>
+          </dl>
         </div>
+      </div>
+      <footer class="media noPrint">
+        <a href="https://github.com/Nolaaaaa" target="_blank"> <svg class="icon" aria-hidden="true"><use xlink:href="#icon-github"></use></svg> </a>
+        <a href="https://www.cnblogs.com/nolaaaaa/" target="_blank"> <svg class="icon" aria-hidden="true"><use xlink:href="#icon-bokeyuan"></use></svg> </a>
+        <a href="https://nolaaaaa.github.io" target="_blank"> <svg class="icon" aria-hidden="true"><use xlink:href="#icon-blog"></use></svg> </a>
+        <a href="https://i.loli.net/2018/08/17/5b769859e24c6.jpg" target="_blank"> <svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixin"></use></svg> </a>
+      </footer>
     </div>
-    <div class="banner noPrint" >        <!--放图片用的-->
-        <div class="mask"></div>    <!--设置透明的黑色-->
+    <p class="selfIntroduction"></p>
+  </main>
+
+  <!-- 项目经验 -->
+  <section data-x class="portfolio" id="siteWorks">
+    <h2>项目经验</h2>
+    <div class="boundary"><div class="sectionBody"></div></div>
+  </section>
+  <section data-x class="skills" id="siteSkills">
+    <div class="skillsList clearfix">
+      <h2>前端技能</h2>
+      <ol class="noPrint clearfix">
+        <li><h3> HTML 5 &amp; CSS 3 </h3><div class="progressBar"><div class="progress" id="progress-htmlcss"> </div></div></li>
+        <li><h3> Javascript </h3><div class="progressBar">  <div class="progress" id="progress-javascript"> </div></div></li>
+        <li><h3> jQuery </h3><div class="progressBar">  <div class="progress" id="progress-jQuery"> </div></div></li>
+        <li><h3> Vue </h3><div class="progressBar">  <div class="progress" id="progress-vue"> </div></div></li>
+        <li><h3> React </h3><div class="progressBar">  <div class="progress" id="progress-react"> </div></div></li>
+        <li><h3> HTTP </h3><div class="progressBar">  <div class="progress" id="progress-http"> </div></div></li>
+      </ol>
+      <div class="print printSkill"></div>
     </div>
-    <main data-x class="about"  id="siteAbout" >
-        <div class="userCard">
-            <div class="pictureAndText clearfix">    
-                <div class="picture noPrint">
-                    <img src="#" width="299px"  height="347px" alt="头像">
-                </div>
-                <div class="text">
-                    <span class="welcome">前端开发工程师
-                        <span class="triangle"></span>
-                    </span>
-                    <h2>何敏娜</h2>
-                    <p>女，24岁，本科，湖南工学院</p>
-                    <hr class="noPrint">
-                    <dl>
-                        <dt>手机</dt> <dd>17621604220</dd>
-                        <dt>微信</dt> <dd class="personMessage"><a href="https://i.loli.net/2018/08/17/5b769859e24c6.jpg" target="_blank" >heminnaaaa</dd>
-                        <dt>邮箱</dt> <dd class="personMessage">venomhmn@163.com</dd>
-                        <dt>博客</dt> <dd class="personMessage"><a href="https://nolaaaaa.github.io" target="_blank" >https://nolaaaaa.github.io</dd>
-                        <dt>Github</dt> <dd class="personMessage"><a href="https://github.com/Nolaaaaa" target="_blank" >https://github.com/Nolaaaaa</dd>
-                    </dl>
-                </div>
-            </div>
-            <footer class="media noPrint">
-                <a href="https://github.com/Nolaaaaa" target="_blank"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-github"></use> </svg> </a>
-                <a href="https://www.cnblogs.com/nolaaaaa/" target="_blank"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-bokeyuan"></use> </svg> </a>
-                <a href="https://nolaaaaa.github.io" target="_blank"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-blog"></use> </svg> </a>
-                <a href="https://i.loli.net/2018/08/17/5b769859e24c6.jpg" target="_blank"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-weixin"></use> </svg> </a>
-            </footer>
-        </div>
-        <!-- <p class="downloadResume-wrapper">
-            <a href="./resume.pdf" class="downloadResume" target="_blank" download>
-                下载PDF简历
-            </a>
-        </p> -->
-        <p class="selfIntroduction">
-             <!-- Nola -->
-        </p>
-    </main>
-    <section data-x class="portfolio" id="siteWorks">
-        <h2>项目经验</h2>
-        <!-- <div class="slides" id="slides">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="#" alt=""></div>
-                    <div class="swiper-slide"><img src="#" alt=""></div>
-                    <div class="swiper-slide"><img src="#" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div> -->
-        <div class="boundary">
-            <div class="section_body"></div>
-        </div>
-    </section>
-    <section data-x class="skills" id="siteSkills">
-        <div class="skills-list clearfix">
-            <h2 >前端技能</h2>
-            <ol class="noPrint clearfix" >
-                <li> <h3> HTML 5 &amp; CSS 3 </h3> <div class="progressBar"> <div class="progress" id="progress-htmlcss"> </div> </div></li>
-                <li> <h3> Javascript </h3> <div class="progressBar"> <div class="progress" id="progress-javascript"> </div> </div> </li>
-                <li> <h3> jQuery </h3> <div class="progressBar"> <div class="progress" id="progress-jQuery"> </div> </div> </li>
-                <li> <h3> Vue </h3> <div class="progressBar"> <div class="progress" id="progress-vue"> </div> </div> </li>
-                <li> <h3> React </h3> <div class="progressBar"> <div class="progress" id="progress-react"> </div> </div> </li>
-                <li> <h3> HTTP </h3> <div class="progressBar"> <div class="progress" id="progress-http"> </div> </div> </li>
-            </ol>
-            <div class="onPrint">
-                <h3> HTML 5 &amp; CSS 3 </h3>
-                <ul>
-                    <li>能使用语义化标签，根据 <b>HTML5</b> 标准编写具有语义化的文档结构</li>
-                    <li>CSS布局：能使用多种方式进行布局，如<b>float、position、flex、grid</b>等</li>
-                    <li>CSS居中：能使用多种方法对元素进行<b>垂直或水平居中</b></li>
-                </ul>
-                <h3> ECMAScript（JavaScript） </h3>
-                <ul>
-                    <li>熟悉 <b>ECMAScript</b>，理解 <b>异步、this、作用域链、原型链、闭包</b> 等</li>
-                    <li>了解 <b>ES6</b> 部分常用语法，如<b>let、箭头函数、模板字符串、解构赋值</b> 等语法</li>
-                </ul>
-                <h3> DOM &amp; BOM </h3>
-                <ul>
-                    <li>熟悉 <b>DOM</b> 事件模型，捕获、冒泡以及如何阻止事件的传递</li>
-                    <li>熟悉原生 <b>DOM</b> 和 <b>BOM</b> 使用和相关标准</li>
-                </ul>
-                <h3> 命令行 &amp; Git </h3>
-                <ul>
-                    <li>了解命令行，能够使用命令行进行常用的操作</li>
-                    <li>了解 <b>git</b> 版本控制工具以及常用的操作</li>
-                </ul>
-                <h3> Vue.js </h3>
-                <ul>
-                    <li>能使用 <b>Vue.js</b> 完成项目，熟悉 <b>Vue.js</b> 的数据双向绑定、父子组件间的通信等操作</li>
-                    <li>了解 <b>Vue-Router</b> 路由以及 vuex 状态管理</li>
-                    <li>了解 <b>vue</b> 生命周期</li>
-                </ul>
-                <h3> HTTP </h3>
-                <ul>
-                    <li>了解常见状态码含义</li>
-                    <li>了解<b>http</b>请求及响应</li>
-                    <li>了解<b>HTTP</b>在客户端和服务器之间的通信过程，了解<b>cookie、localStorage</b>的基本区别</li>
-                </ul>
-                <h3> 其他 </h3>
-                <ul>
-                    <li>使用过css预处理器如Sass，提升开发效率和质量</li>
-                    <li>使用过 <b>Webpack</b> 前端打包工具，能进行基础的使用</li>
-                    <li>具备基本的前端安全，性能优化等知识</li>
-                    <li>能使用<b>meta:vp</b>以及媒体查询进行移动端开发</li>
-                    <li>熟练使用 <b>photoshop</b> 等设计工具</li>
-                    <li>熟悉 <b>linux</b> 系统</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="experience onPrint ">
-        <h2>工作经历</h2>
-        <div>
-            <h3>上海昌硕科技有限公司</h3>
-            <ul>
-                <li>新机种Line Qual阶段与客户沟通、审核各制程提供资料OK后上传给客户、出现Issue时追踪处理；并负责组织ISO9001相关内部稽核，参与公司的年度内审及第三方认证陪审等工作等；</li>
-            </ul>
-        <div>
-    </section>
-    <section class="characteristic onPrint ">
-        <h2>自我描述</h2>
-        <ul>
-            <li>充满好奇心，享受coding，对技术有热情</li>
-            <li>良好的沟通协调能力和团队合作能力，工作主动，认真细致</li>
-            <li>兴趣：日语，画画，音乐，吉他</li>
-        </ul>
-    </section>
-    
-    <section class="message noPrint" id="siteMessage ">
-        <h2>留言</h2>
-        <form action="" id="postMessage" class="postMessage" >
-            <div> <span>名字:</span> <input type="text"  class="name" name="name"> </div>
-            <div> <span>留言:</span> <input type="text"  class="content" name="content"></div>
-            <input type="submit" class="submit" value="提交">
-        </form>
-        <ol id="messageList" class="messageList"></ol>
-    </section>
-    <section class="download noPrint">
-        <p class="downloadResume-wrapper">
-            <a class="downloadResume" href="./Nola's Personal resume.pdf" download="前端开发-何敏娜.pdf" target="_blank">下载简历</a>
-        </p>
-    </section>
-    <!--引入tween.js库-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>    
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script> -->
-    <!-- 存储服务 -->
-    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
-    <!-- 实时消息服务 -->
-    <script src="//cdn.jsdelivr.net/npm/leancloud-realtime@4.0.1/dist/realtime.browser.min.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="//at.alicdn.com/t/font_624916_33iiww021vp.js"></script>
-    <!-- <script src="./js/init-swiper.js"></script> -->
-    <script src="./js/main.js"></script>
-    <script src="./js/active-topbar.js"></script>
-    <script src="./js/auto-slide-up.js"></script>
-    <script src="./js/smoothly-navigation.js"></script>
-    <script src="./js/sticky-topbar.js"></script> 
-    <script src="./js/message.js"></script>
-    <script src="./js/project.js"></script>
-    <!-- <script src="./js/common.js"></script> -->
+  </section>
+
+  <!-- 工作经历 -->
+  <section class="experience print ">
+    <h2>工作经历</h2><div class="companys"><div>
+  </section>
+  <section class="characteristic print ">
+    <h2>自我描述</h2><div class="hobbys"></div>
+  </section>
+
+  <!-- 留言 -->
+  <section class="message noPrint" id="siteMessage ">
+    <h2>留言</h2>
+    <form action="" id="postMessage" class="postMessage">
+      <div> <span>名字:</span> <input type="text" class="name" name="name"> </div>
+      <div> <span>留言:</span> <input type="text" class="content" name="content"></div>
+      <input type="submit" class="submit" value="提交">
+    </form>
+    <ol id="messageList" class="messageList"></ol>
+  </section>
+  <section class="download noPrint">
+    <p class="downloadResume-wrapper"><a class="downloadResume" href="./Nola's Personal resume.pdf" download="前端开发-何敏娜.pdf" target="_blank">下载简历</a></p>
+  </section>
+
+  <!--引入tween.js库-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script> -->
+  <!-- 存储服务 -->
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
+  <!-- 实时消息服务 -->
+  <script src="//cdn.jsdelivr.net/npm/leancloud-realtime@4.0.1/dist/realtime.browser.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="//at.alicdn.com/t/font_624916_33iiww021vp.js"></script>
+  <!-- <script src="./js/init-swiper.js"></script> -->
+  <script src="./js/main.js"></script>
+  <script src="./js/active-topbar.js"></script>
+  <script src="./js/auto-slide-up.js"></script>
+  <script src="./js/smoothly-navigation.js"></script>
+  <script src="./js/sticky-topbar.js"></script>
+  <script src="./js/message.js"></script>
+  <script src="./js/project.js"></script>
+  <!-- <script src="./js/common.js"></script> -->
 </body>
+
 </html>

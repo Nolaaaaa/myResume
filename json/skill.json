@@ -1,0 +1,56 @@
+{
+  "code": 0,
+  "data": {
+      "skills": [
+        {
+          "title": "HTML 5 &amp; CSS 3",
+          "skills": [
+            {"skill":"能使用语义化标签，根据 <b>HTML5</b> 标准编写具有语义化的文档结构"},
+            {"skill":"CSS布局：能使用多种方式进行布局，如<b>float、position、flex、grid</b>等"},
+            {"skill":"CSS居中：能使用多种方法对元素进行<b>垂直或水平居中</b>"}
+          ]
+        },{
+          "title": "ECMAScript（JavaScript） ",
+          "skills": [
+            {"skill":"熟悉 <b>ECMAScript</b>，理解 <b>异步、this、作用域链、原型链、闭包</b> 等"},
+            {"skill":"了解 <b>ES6</b> 部分常用语法，如<b>let、箭头函数、模板字符串、解构赋值</b> 等语法"}
+          ]
+        },{
+          "title": "DOM &amp; BOM",
+          "skills": [
+            {"skill":"熟悉 <b>DOM</b> 事件模型，捕获、冒泡以及如何阻止事件的传递"},
+            {"skill":"熟悉原生 <b>DOM</b> 和 <b>BOM</b> 使用和相关标准"}
+          ]
+        },{
+          "title": "命令行 &amp; Git ",
+          "skills": [
+            {"skill":"了解命令行，能够使用命令行进行常用的操作"},
+            {"skill":"了解 <b>git</b> 版本控制工具以及常用的操作"}
+          ]
+        },{
+          "title": "Vue.js",
+          "skills": [
+            {"skill":"能使用 <b>Vue.js</b> 完成项目，熟悉 <b>Vue.js</b> 的数据双向绑定、父子组件间的通信等操作"},
+            {"skill":"了解 <b>Vue-Router</b> 路由以及 vuex 状态管理"},
+            {"skill":"了解 <b>vue</b> 生命周期"}
+          ]
+        },{
+          "title": "HTTP",
+          "skills": [
+            {"skill":"了解常见状态码含义"},
+            {"skill":"了解<b>http</b>请求及响应"},
+            {"skill":"了解<b>HTTP</b>在客户端和服务器之间的通信过程，了解<b>cookie、localStorage</b>的基本区别"}
+          ]
+        },{
+          "title": "其他",
+          "skills": [
+            {"skill":"使用过css预处理器如Sass，提升开发效率和质量"},
+            {"skill":"使用过 <b>Webpack</b> 前端打包工具，能进行基础的使用"},
+            {"skill":"具备基本的前端安全，性能优化等知识"},
+            {"skill":"能使用<b>meta:vp</b>以及媒体查询进行移动端开发"},
+            {"skill":"熟练使用 <b>photoshop</b> 等设计工具, 熟悉 <b>linux</b> 系统"}
+          ]
+        }
+      ]
+  }
+}
