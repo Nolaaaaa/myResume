@@ -1,0 +1,24 @@
+.atlas {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 30% 30%;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 10%;
+}
+.container {
+  padding-top: 110rpx;
+  height: 100%;
+  width: 100%;
+
+}
+.img {
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(1);
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+.img:hover {
+  filter: grayscale(0);
+}

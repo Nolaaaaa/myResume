@@ -21,13 +21,12 @@ h3{font-size:22px}
 /*position: fixed; top: 0;  left: 0; 使导航栏脱离文档流，即，高度不包含在div中，设置完这三个，会发现导航栏都偏到了左边*/
 /*（最好不要用width/height，容易出bug）设置完width: 100%; ，导航栏会回到右边，但是太偏右了，宽度比父级元素还宽*/ 
 /*解决方法，由于topNavbar在加上width后不能左右padding（如上条标注），故在topNavbar下面加div设padding*/ 
-.topNavbar{ display: block; padding: 16px 0px; color:#b7b7b7; position: fixed; top: 0;  left: 0; width: 100%; }
+.topNavbar{ display: block; padding: 16px 0px; color:black; position: fixed; top: 0;  left: 0; width: 100%; z-index: 1;}
 /*如何让鼠标滚动是顶部导航栏发生变化？在js中建立一个条件语句，当scrollY>0时在topNavbar生成一个class，如果<=0则清除这个class*/
 /*z-index: 1; 堆叠元素，使其在其他元素上方显示*/
-.topNavbar.sticky{ background:white; padding:8px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);color: #3d4451; z-index: 1;   }
+.topNavbar.sticky{ background:white; padding:8px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);color: #3d4451; z-index: 1;   }
 .topNavbar-inner{ padding: 0 16px;}
-.topNavbar .logo{ font-size: 22px; font-family: "Arial black";padding: 2px 8px 2px 0 ; }
-.topNavbar .logo .rs{ color: #e06567; }
+.topNavbar .logo{ font-size: 22px; font-family: "Arial black";padding: 2px 8px 2px 0 ; color: #e06567; }
 .topNavbar nav{ float: right; padding-top: 6px; }
 .topNavbar nav>ul{ list-style: none; margin: 0; padding: 0; }
 .topNavbar nav>ul>li{ float: left; padding-right: 16px; padding-left: 16px;position: relative; }
@@ -59,9 +58,10 @@ h3{font-size:22px}
     background-size: cover;/*使背景图自己适应div*/ }
 .banner .mask{ height: 515px; background-color: rgba(0, 0, 0, 0.7); }
 
+/* 个人信息 */
 /*设置卡片的最大宽度是940，如果页面变小，会自适应（如果只写宽度，则没有自适应）*/
 main .userCard{ background-color: #ffffff; max-width: 900px;  margin-right: auto; margin-left: auto;/*使卡片居中*/ 
-    box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); }
+    box-shadow: 0px 1px 20px 0px  rgba(34, 34, 34, 0.1); }
 /*外层div （userCard）不能加padding，则可以加在里面一层的div中*/
 main .userCard .pictureAndText{ padding: 50px 50px 50px 0;display: flex;justify-content: space-between}
 main .userCard .picture{ overflow: hidden ;width: 299px; height: 347px;  /*背景图居中*/ background-size: cover;margin-left:50px ; }
@@ -93,13 +93,10 @@ main .downloadResume-wrapper{ text-align: center; margin-top: 28px; }
 /*这里为什么不能设置display: block;  ？因为这个标签需要用边框包裹，用block的话就是块级，边框无限大*/   
 main .downloadResume{ display: inline-block; text-align: center; padding: 12px 40px; font-size: 14px; line-height: 14px; 
     border:1px solid #cdcfd1; border-radius: 2px; font-weight: bold; transition: box-shadow 0.5s;/*添加hover过度效果*/ }
-main .downloadResume:hover{ box-shadow: 0px 2px 8px 0px rgba(34, 34, 34, 0.5); /*阴影效果搜索css shadow generator*/ }
-main .selfIntroduction{ margin: 50px 40px 100px; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 18px; 
-    font-size: 18px; }
 
 section h2{ text-align: center;}
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
-section.skills .skillsList{ max-width: 900px; box-shadow: 0px 1px 5px 0px  rgba(34, 34, 34, 0.5); background: #ffffff; 
+section.skills .skillsList{ max-width: 900px; box-shadow: 0px 1px 20px 0px  rgba(34, 34, 34, 0.1); background: #ffffff; 
     margin: 10px auto 100px auto; padding: 60px 0 60px;}
 section.skills .skillsList ol.noPrint{ padding:40px 40px 10px 40px; }
 section.skills .skillsList ol.noPrint>li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
@@ -160,6 +157,7 @@ section.portfolio .slides .swiper-button-next{ width:60px; height:60px; border-r
 section.portfolio{ text-align: center; }
 section.portfolio .slides{ width: 100%; display: inline-block; }
 
+/* 留言 */
 section.message{ background: #fafafa; padding: 60px 0 200px 0;margin: 0px auto 100px; }
 section.message .postMessage{ max-width: 900px; margin: 30px auto 16px; text-align: left;}
 section.message .postMessage div{margin-bottom: 5px;display: inline-block}

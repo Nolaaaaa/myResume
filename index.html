@@ -8,6 +8,7 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css"> -->
   <link rel="stylesheet" href="./css/loading.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/atlas.css">
   <link rel="stylesheet" href="./css/print.css" media="print">
 </head>
 
@@ -19,19 +20,34 @@
   <div class="topNavbar noPrint" id="topNavbar">
     <div class="topNavbar-inner clearfix">
       <!--不在class名字后加上一个clearfix的话，div会不见 -->
-      <a href="#" alt="logo" class="logo"><span class="rs">Nola</span></a>
+      <a href="#" alt="logo" class="logo">Nola</a>
       <nav class="menu"><ul class="clearfix">
-        <li><a href="#siteAbout">关于</a></li>
+          <li><a href="#siteAtlas">图集</a></li>
+          <!-- <li><a href="#siteAbout">作品</a></li> -->
         <li><a href="#siteWorks">作品</a></li>
         <li><a href="#siteSkills">技能</a></li>
         <li><a href="#siteMessage">留言</a></li>
       </ul> </nav>
     </div>
   </div>
-  <div class="banner noPrint"><div class="mask"></div></div>    <!--设置透明的黑色-->
+  <!-- <div class="banner noPrint"><div class="mask"></div></div>  -->
+
+  <!-- 图集展示 -->
+  <section data-x class="atlas" id="siteAtlas">
+    <div class="container">
+        <!-- <div class="shadow"></div> -->
+        <img class="img"  src="https://i.loli.net/2019/01/20/5c443685e30ee.jpg" width='300px' alt="图片1" height='200px'>
+        <!-- <h3 class="title"><span class="title-inner" data-hover="Hard">Hard</span></h3>
+        <h4 class="text"><span class="text-inner">Fast</span></h4>
+        <p class="content">"Love stronger, stranger! Love stronger."</p> -->
+    </div>
+    <div class="container">
+      <img class="img" src="https://i.loli.net/2019/01/20/5c4436864df0d.jpg" width='300px' alt="图片2" height='200px'>
+    </div>
+    </section>
 
   <!-- 个人信息 -->
-  <main data-x class="about" id="siteAbout">
+  <!-- <main data-x class="about" id="siteAbout">
     <div class="userCard">
       <div class="pictureAndText clearfix">
         <div class="picture noPrint"><img src="#" width="299px" height="347px" alt="头像"></div>
@@ -56,7 +72,7 @@
       </footer>
     </div>
     <p class="selfIntroduction"></p>
-  </main>
+  </main> -->
 
   <!-- 项目经验 -->
   <section data-x class="portfolio" id="siteWorks">
@@ -87,7 +103,7 @@
   </section>
 
   <!-- 留言 -->
-  <section class="message noPrint" id="siteMessage ">
+  <section class="message noPrint" id="siteMessage">
     <h2>留言</h2>
     <form action="" id="postMessage" class="postMessage">
       <div> <span>名字:</span> <input type="text" class="name" name="name"> </div>
@@ -96,6 +112,8 @@
     </form>
     <ol id="messageList" class="messageList"></ol>
   </section>
+  
+  <!-- 下载简历按钮 -->
   <section class="download noPrint">
     <p class="downloadResume-wrapper"><a class="downloadResume" href="./Nola's Personal resume.pdf" download="前端开发-何敏娜.pdf" target="_blank">下载简历</a></p>
   </section>
