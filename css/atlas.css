@@ -1,7 +1,7 @@
 .atlas {
   height: 400px;
   display: grid;
-  grid-template-columns: 30% 30%;
+  grid-template-columns: 40% 40%;
   align-content: center;
   justify-content: center;
   grid-gap: 10%;
@@ -21,4 +21,15 @@
 }
 .img:hover {
   filter: grayscale(0);
+}
+
+@media(max-width:745px){ 
+  .atlas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40%;
+    align-content: flex-end;
+    justify-content: center;
+    grid-gap: 4% 4%;
+  }
 }

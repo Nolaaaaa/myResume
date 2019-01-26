@@ -24,7 +24,7 @@ h3{font-size:22px}
 .topNavbar{ display: block; padding: 16px 0px; color:black; position: fixed; top: 0;  left: 0; width: 100%; z-index: 1;}
 /*如何让鼠标滚动是顶部导航栏发生变化？在js中建立一个条件语句，当scrollY>0时在topNavbar生成一个class，如果<=0则清除这个class*/
 /*z-index: 1; 堆叠元素，使其在其他元素上方显示*/
-.topNavbar.sticky{ background:white; padding:8px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);color: #3d4451; z-index: 1;   }
+.topNavbar.sticky{ background: white; padding:8px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);color: #3d4451; z-index: 1;   }
 .topNavbar-inner{ padding: 0 16px;}
 .topNavbar .logo{ font-size: 22px; font-family: "Arial black";padding: 2px 8px 2px 0 ; color: #e06567; }
 .topNavbar nav{ float: right; padding-top: 6px; }
@@ -170,4 +170,13 @@ section.message ol li{ padding: 16px 16px 16px 0; border-bottom: 1px dashed #ccc
 
 section.download { position: fixed; top: 50%; transform: translateY(-50%); right: 0; z-index: 1; }
 section.download .downloadResume { display: inline-block; font-size: 14px; padding: 18px 22px 12px; color: #f4f4f4; font-weight: bold; writing-mode: vertical-lr; /* 竖起来显示 */ letter-spacing:1px; background: #cf5d5f; font-family: Arial, sans-serif; border: solid 0 #e3edf4; border-bottom: 2px solid #cf5d5f; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; opacity: 0.8; }
-@media(max-width:500px){ .topNavbar nav>ul>li{ margin-right:1px; margin-left:1px;} .topNavbar nav>ul>li>a{font-size: 10px;padding-bottom: 2px;padding-top: 2px; } .topNavbar .logo{ font-size: 18px; } main .userCard .media{display: none} main .userCard .picture{display: none} section.skills .skillsList ol li{width: 100%; } .boundary .sectionBody .project { display: inline-block;} .project_intro { margin: 0 12px; } }
+@media(max-width:500px){ 
+  .topNavbar nav>ul>li{ margin-right:1px; margin-left:1px;} 
+  .topNavbar nav>ul>li>a{font-size: 10px;padding-bottom: 2px;padding-top: 2px; } 
+  .topNavbar .logo{ font-size: 18px; } 
+  main .userCard .media{display: none} 
+  main .userCard .picture{display: none} 
+  section.skills .skillsList ol.noPrint li{ width: 100%;} 
+  .boundary .sectionBody .project { display: inline-block;} 
+  .project_intro { margin: 0 12px; } 
+}
