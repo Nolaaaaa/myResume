@@ -79,43 +79,6 @@
                 "code": "",
                 "image": "#",
                 "imageAlt": ""
-            },
-            {
-                "title": "一只皮卡丘",
-                "Etitle": "A cute pikachu",
-                "skills": [
-                    {"skill":"JavaScript"},
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"Prism"}
-                ],
-                "describe": "使用CSS3动态在HTML页面动态绘制一个皮卡丘，并添加快中慢调速按钮， <b>setTimeout + pre标签</b> 动态向页面添加文本， <b>sprism.js</b> 实现代码高亮。实现主要功能有:",
-                "functions": [
-                    {"function":"代码在HTML页面动态的出现，页面动态代码可以进行快中慢调速、代码实现高亮"}
-                ],
-                "preview": "https://nolaaaaa.github.io/demo/pikachu/dynamic",
-                "code": "https://github.com/Nolaaaaa/demo/tree/master/pikachu/dynamic",
-                "image": "#",
-                "imageAlt": ""
-            },
-            {
-                "title": "个人简历",
-                "Etitle": "A web resume",
-                "skills": [
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"jQuery"},
-                    {"skill":"Tween"},
-                    {"skill":"LeanCloud"}
-                ],
-                "describe": "使用<b>jQuery</b>进行开发，留言版数据库使用<b>LeanCloud</b>储存获取数据，页面动画用<b>Tween.js</b>实现:",
-                "functions": [
-                    {"function":"实现页面动画功能，实现留言功能"}
-                ],
-                "preview": "https://nolaaaaa.github.io/resume/index.html",
-                "code": "https://github.com/Nolaaaaa/resume",
-                "image": "#",
-                "imageAlt": ""
             }
         ]
     }
