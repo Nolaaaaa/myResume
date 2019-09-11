@@ -1,0 +1,35 @@
+/* 打印时隐藏 */
+.noPrint { display:none; }
+
+/*打印时显示*/
+.print { display: block; position:relative; margin: 0;padding: 0}
+h3{ font-size: 16px; }
+
+/* 全局样式 */
+body{ background: white; padding: 0;margin: 0;}
+body main { padding:0; margin:0px;}
+section.skills, section.portfolio { padding:0; background: white;}
+section.portfolio { margin: -70px 0 0 0; }
+section.skills h2,section.portfolio h2,.experience h2,.characteristic h2{ text-align: left; }
+
+/* 个人资料 */
+main .userCard{box-shadow:none;padding: 0;margin: 0;}
+main .userCard .pictureAndText{padding:10px 0 0 0;background: white;}
+main .userCard .pictureAndText .text{padding: 0;margin: 0}
+main .userCard .pictureAndText .welcome p{padding-bottom: 10px;}
+main .userCard dl dt, main .userCard dl dd{padding: 0}
+
+/* 作品集 */
+.boundary{padding: 0; margin: 0;}
+.boundary .sectionBody .project .project_thumb img{height: 196px;width: 254px;}  /* 图片大小 */
+.boundary .sectionBody .project{ margin-top: 4px; padding:10px 0 0 0;margin-bottom: 10px;}
+.boundary .sectionBody .project .project_intro .project_intro_header{margin-bottom: 5px;}
+
+/* 技能 & 工作经验 & 自我描述*/
+section.skills .skillsList{box-shadow:none;background: white;padding: 0;}
+.print ul{padding: 0;}   
+.print h3{margin-top: 14px;padding-top: 6px;border-top: 1px dashed #ccc;}   
+.print ul li{ list-style: inherit; margin: 2px 0 0 15px;}
+.experience{margin-bottom: 30px;margin-top: -56px;}
+.characteristic ul{padding-bottom: 30px;}
+
