@@ -18,29 +18,29 @@ ___
 
 ### 作品集
 ___
-**简历制作器**  [预览链接](https://nolaaaaa.github.io/resume-maker/dist/) [代码链接](https://github.com/Nolaaaaa/resume-maker)
+#### 简历制作器  [预览链接](https://nolaaaaa.github.io/resume-maker/dist/) [代码链接](https://github.com/Nolaaaaa/resume-maker)
 * 一个在线简历编辑器，实现了简历在线编辑，使用**vue-cli + webpack**进行模块化开发，使用scss进行css预处理编写
 * 主要功能: 技能区、项目区的可编辑，信息编辑时立即生成简历
-**快捷导航**  [预览链接](https://nolaaaaa.github.io/navigation-page) [代码链接](https://github.com/Nolaaaaa/navigation-page)
+#### 快捷导航  [预览链接](https://nolaaaaa.github.io/navigation-page) [代码链接](https://github.com/Nolaaaaa/navigation-page)
 * 使用原生 JS 开发，利用 localStorage 储存的储存功能，实现一个不用动鼠标，通过快捷键即可进入绑定网址的便捷大方美观的导航页面
 * 实现主要功能有: 键盘导航功能，点击键盘对应字母即可跳转到对应页面，可动态编辑保存导航地址，页面新加搜索框，可输入内容进行搜索；添加了谷歌插件配置，可在Chrome新标签页打开使用
-**Canvas画板**  [预览链接](https://nolaaaaa.github.io/canvas-drawing-board) [代码链接](https://github.com/Nolaaaaa/canvas-drawing-board)
+#### Canvas画板  [预览链接](https://nolaaaaa.github.io/canvas-drawing-board) [代码链接](https://github.com/Nolaaaaa/canvas-drawing-board)
 * 通过原生**JavaScript + canvas**实现的在线画板
 * 主要功能有: 画笔颜色、画笔粗细可选择、橡皮擦、一键清除的功能、绘画内容可本地保存，可通过鼠标绘画也可触摸绘画，适配移动端操作 
-**日常小demo集**  [预览链接](https://github.com/Nolaaaaa/demo/blob/master/README.md) [代码链接](https://github.com/Nolaaaaa/demo)
+#### 日常小demo集  [预览链接](https://github.com/Nolaaaaa/demo/blob/master/README.md) [代码链接](https://github.com/Nolaaaaa/demo)
 
 ### 工作经验
 ___
 #### 杭州因睿生物工程有限公司--前端工程师（ 2018年8月 ~ 2019年8月 ）
 * 公司介绍：创业公司，提供营养师咨询服务，帮助用户从亚健康走向健康，同时更好的进行疾病的预防和管理
-##### [吃什么box小程序](https://github.com/Nolaaaaa/resume/blob/master/img/chishenme.jpg)
+##### 吃什么box小程序  [预览地址](https://github.com/Nolaaaaa/resume/blob/master/img/chishenme.jpg)
 * 一个微信小程序写的一个**商城项目**，主要功能有**购物车**、**订单管理**、**地址管理**等
 * 开发此项目时需求紧急，在高强度的工作节奏中以极限速度完成了整个项目的开发和上线，锻炼了我工作中的抗压能力，且提高了编程效率。且与前端团队成员一起，建立了基本的代码规范，提高了代码的规范性
-##### [吃什么问问用户端小程序](https://github.com/Nolaaaaa/resume/blob/master/img/wenwen.jpg)
+##### 吃什么问问用户端小程序  [预览地址](https://github.com/Nolaaaaa/resume/blob/master/img/wenwen.jpg)
 * **提供家庭营养师的服务**，关注用户健康的小程序，主要功能有：**与营养师端小程序进行聊天**、**发表日记**、**自动匹配营养师**
 * 为避免重复的代码，与前端团队成员沟通，将基础常用的一些模块进行组件化，大大提高了开发效率
 * 期间因业务需求开发**支付宝小程序**，后因支付宝不支持社交笔记类小程序放弃上线
-##### [吃什么问问营养师小程序](https://github.com/Nolaaaaa/resume/blob/master/img/wenwen_diet.jpg)
+##### 吃什么问问营养师小程序  [预览地址](https://github.com/Nolaaaaa/resume/blob/master/img/wenwen_diet.jpg)
 * **吃什么问问的营养师端**，主要功能：**营养师的注册**、**和用户端用户聊天**、**添加编辑快捷回复**、**定制营养报告**等
 * 开发过程中，遇到好几个小程序的坑（如微信原生组件的层级问题）并进行了处理。同时也尝试对小程序进行了一些优化，提高了小程序页面的加载速度
 ##### 吃什么营养师PC版
