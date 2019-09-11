@@ -100,9 +100,12 @@
 
   // 不同的技能不同的颜色
   window.onload = function itemlists() {   //window.onload，即，在页面所有的一切都加载完后才执行函数
+    console.log(1111)
     let item = document.querySelectorAll('.tech-tag-list_item')
+    console.log(item)
     for (let i = 0; i < item.length; i++) {
       let value = item[i].innerText
+      console.log(value)
       if (value) {
         item[i].classList.add(`tech-tag-list_${value}`)
       }

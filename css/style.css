@@ -7,7 +7,6 @@ ul li { list-style: none; }
 h1 h2 h3 h4 h5 h6 h7{ font-weight: normal; }
 .icon { width:1px; height:1px; vertical-align: -0.5px; fill: currentColor; overflow: hidden; }
 *{ margin: 0px; padding: 0px;  }
-.print { display:none; }
 hr{ height: 0; border: none; border-top: 1px solid #dedede; }
 /*clear: both;这个css设置的作用是可以清除元素在设置float时的的浮动（设置位置：子元素的父级元素）*/ 
 .clearfix::after{ content: ''; display: block; clear: both;}
@@ -98,13 +97,13 @@ section h2{ text-align: center;}
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
 section.skills .skillsList{ max-width: 900px; box-shadow: 0px 1px 20px 0px  rgba(34, 34, 34, 0.1); background: #ffffff; 
     margin: 10px auto 100px auto; padding: 60px 0 60px;}
-section.skills .skillsList ol.noPrint{ padding:40px 40px 10px 40px; }
-section.skills .skillsList ol.noPrint>li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
+section.skills .skillsList ol{ padding:40px 40px 10px 40px; }
+section.skills .skillsList ol>li{ float: left; width: 48%;  box-sizing: border-box;  /*重点,不设置这个的话，设置padding元素会换行*/ }
 /*将宽度设低，然后将奇数个li元素左浮动，偶数个元素右浮动*/
-section.skills .skillsList ol.noPrint li:nth-child(obb){  /*奇数个li元素*/ float: left; }
-section.skills .skillsList ol.noPrint li:nth-child(even){  /*偶数个li元素*/ float:right; }
-section.skills .skillsList ol.noPrint .progressBar{ height: 5px; background: #fae1e1; border-radius: 3px;  margin:4px 0 40px;overflow:hidden }
-section.skills .skillsList ol.noPrint .progressBar .progress{ background: #e6686a; width: 50%; /*默认进度条的长度，如需不一样，可另外单独加ID*/ 
+section.skills .skillsList ol li:nth-child(obb){  /*奇数个li元素*/ float: left; }
+section.skills .skillsList ol li:nth-child(even){  /*偶数个li元素*/ float:right; }
+section.skills .skillsList ol .progressBar{ height: 5px; background: #fae1e1; border-radius: 3px;  margin:4px 0 40px;overflow:hidden }
+section.skills .skillsList ol .progressBar .progress{ background: #e6686a; width: 50%; /*默认进度条的长度，如需不一样，可另外单独加ID*/ 
     height: 100%; border-radius: 3px;transform: translateX(0%);transition: all 1s;}
 /*让页面滑到skill-list的时候，技能条才动画出现。第一步：使它在元素有offset属性时translateX(-100%)使消失，
 第二步：使它在元素有offset属性时translateX(-100%)使出现，第三步：在父级元素progressBar上添加overflow:hidden,防止溢出*/
@@ -124,7 +123,7 @@ section .boundary { clear: both; padding: 20px 0; max-width: 900px; margin: 0 au
 .boundary .sectionBody .project .project_intro { padding: 0 24px 0 0; }
 .boundary .sectionBody .project .project_intro .project_intro_header { position: relative; margin-bottom: 8px; line-height: 1.3; text-align: left; }
 .boundary .sectionBody .project .project_intro .project_intro_header .project_intro_header_title { font-size: 1.2em; font-weight: bold; display: inline; padding-bottom: 3px; }
-.boundary .sectionBody .project .project_intro .project_intro_header .tech-tag-list .tech-tag-list_item { height: 18px; line-height: 18px; padding: 0 4px;margin: 0 2px; border-radius: 4px; display: inline-block; vertical-align: middle;font-family: 'Lucida Grande', arial; color: #fff; }
+.boundary .sectionBody .project .project_intro .project_intro_header .tech-tag-list .tech-tag-list_item { height: 18px; line-height: 18px; padding: 0 4px;margin: 0 2px; border-radius: 4px; display: inline-block; vertical-align: middle;font-family: 'Lucida Grande', arial; color: #fff; font-size: 6px; }
 .tech-tag-list_Vue-cli{background: #25AF02}
 .tech-tag-list_JavaScript{background: rgb(84, 210, 248)}
 .tech-tag-list_CSS3{background: rgb(243, 123, 83)}
@@ -176,7 +175,7 @@ section.download .downloadResume { display: inline-block; font-size: 14px; paddi
   .topNavbar .logo{ font-size: 18px; } 
   main .userCard .media{display: none} 
   main .userCard .picture{display: none} 
-  section.skills .skillsList ol.noPrint li{ width: 100%;} 
+  section.skills .skillsList ol li{ width: 100%;} 
   .boundary .sectionBody .project { display: inline-block;} 
   .project_intro { margin: 0 12px; } 
 }

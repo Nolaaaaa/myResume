@@ -17,8 +17,8 @@
                     {"function":"绘画内容可本地保存"},
                     {"function":"可通过鼠标绘画，也可触摸绘画。适配移动端操作"}
                 ],
-                "preview": "https://nolaaaaa.github.io/canvas/index.html",
-                "code": "https://github.com/Nolaaaaa/canvas",
+                "preview": "https://nolaaaaa.github.io/canvas-drawing-board",
+                "code": "https://github.com/Nolaaaaa/canvas-drawing-board",
                 "image": "https://i.loli.net/2018/08/17/5b769817eaa03.jpg",
                 "imageAlt": "Canvas"
             },
@@ -39,8 +39,8 @@
                     {"function":"通过 <b>LeanCloud</b> 后台管理系统，实现歌曲新建、添加、编辑、删除"},
                     {"function":"适配手机端"}
                 ],
-                "preview": "https://nolaaaaa.github.io/tode/dist/",
-                "code": "https://github.com/Nolaaaaa/todo",
+                "preview": "https://nolaaaaa.github.io/todo/dist/",
+                "code": "https://nolaaaaa.github.io/todo/dist/",
                 "image": "https://i.loli.net/2018/08/17/5b769849df0d1.jpg",
                 "imageAlt": "TodoList"
             }, 
@@ -57,7 +57,7 @@
                     {"function":"键盘导航功能，点击键盘对应字母即可跳转到对应页面"},
                     {"function":"可动态编辑保存导航地址"}
                 ],
-                "preview": "https://nolaaaaa.github.io/navigation-page/",
+                "preview": "https://nolaaaaa.github.io/navigation-page",
                 "code": "https://github.com/Nolaaaaa/navigation-page",
                 "image": "https://i.loli.net/2018/08/17/5b7698357a838.jpg",
                 "imageAlt": "Navigation"
@@ -76,7 +76,7 @@
                     {"function":"技能区、项目区的可编辑，信息编辑时立即生成简历"}
                 ],
                 "preview": "https://nolaaaaa.github.io/resume-maker/dist/",
-                "code": "",
+                "code": "https://github.com/Nolaaaaa/resume-maker",
                 "image": "https://i.loli.net/2019/03/25/5c98f3524e514.jpg",
                 "imageAlt": ""
             }
