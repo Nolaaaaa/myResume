@@ -3,70 +3,6 @@
     "data": {
         "projects": [
             {
-                "title": "有赞商城",
-                "Etitle": "Vue reconstruct youzan shop store",
-                "skills": [
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"Vue-cli"},
-                    {"skill":"JavaScript"},
-                    {"skill":"Vue-router"},
-                    {"skill":"Vuex"},
-                    {"skill":"Swiper"},
-                    {"skill":"RAP"},
-                    {"skill":"Mock"}
-                ],
-                "describe": "利用 <b>vue-cli + webpack</b> 模块化开发，通过 <b>RAP + Mock</b> 动态生成模拟数据，轮播采用<b>Swiper</b>组件，主要功能有:",
-                "functions": [
-                    {"function":"数据获取按需加载（懒加载）"},
-                    {"function":"购物车页通过全选、多选、单选的方式进行结算或编辑删除"},
-                    {"function":"地址管理可新增、保存、删除、编辑"}
-                ],
-                "preview": "https://nolaaaaa.github.io/youzan/preview/preview.png",
-                "code": "https://github.com/Nolaaaaa/youzan",
-                "image": "https://i.loli.net/2018/08/17/5b76986868ac9.jpg",
-                "imageAlt": "Youzan"
-            },
-            {
-                "title": "QQ音乐",
-                "Etitle": "QQ music player",
-                "skills": [
-                    {"skill":"CSS3"},
-                    {"skill":"Sass"},
-                    {"skill":"HTML5"},
-                    {"skill":"JavaScript"},
-                    {"skill":"Webpack"},
-                    {"skill":"Express"}
-                ],
-                "describe": "使用 <b>ES6</b> 语法编写，利用 <b>express + cors</b> 实现跨域从qq音乐官网获取并展示首页，排行榜，搜索等页面。通过懒加载按需加载首页、排行榜、搜索，优化网页性能。运用 <b>HTML5 + css3</b> 实现播放页面，动态播放出歌词，歌词准确提示。利用 <b>Sass</b> 编写 <b>css</b> ，样式代码结构清晰，主要功能有:",
-                "functions": [
-                    {"function":"展示歌曲列表、展示热歌榜歌曲、搜索歌曲。"}
-                ],
-                "preview": "https://nolaaaaa.github.io/qq-music/",
-                "code": "https://github.com/Nolaaaaa/qq-music",
-                "image": "https://i.loli.net/2018/08/17/5b7698277726d.jpg",
-                "imageAlt": "QQ music"
-            },
-            {
-                "title": "动态简历",
-                "Etitle": "A ynamic resume",
-                "skills": [
-                    {"skill":"JavaScript"},
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"Prism"}
-                ],
-                "describe": "实现一个动态简历，利用 <b>setTimeout + pre标签</b> 动态向页面添加文本。使用 prism.js 实现代码高亮。实现主要功能有:",
-                "functions": [
-                    {"function":"文本在页面动态的添加"},
-                    {"function":"页面上代码的代码实现高亮"}
-                ],
-                "preview": "https://nolaaaaa.github.io/ynamic-resume/",
-                "code": "https://github.com/Nolaaaaa/ynamic-resume",
-                "image": "https://i.loli.net/2018/08/19/5b795c1ea0b15.jpg",
-                "imageAlt": "ynamic resume"
-            },
-            {
                 "title": "Canvas画板",
                 "Etitle": "A simple practical canvas",
                 "skills": [
@@ -141,44 +77,7 @@
                 ],
                 "preview": "https://nolaaaaa.github.io/resume-maker/dist/",
                 "code": "",
-                "image": "#",
-                "imageAlt": ""
-            },
-            {
-                "title": "一只皮卡丘",
-                "Etitle": "A cute pikachu",
-                "skills": [
-                    {"skill":"JavaScript"},
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"Prism"}
-                ],
-                "describe": "使用CSS3动态在HTML页面动态绘制一个皮卡丘，并添加快中慢调速按钮， <b>setTimeout + pre标签</b> 动态向页面添加文本， <b>sprism.js</b> 实现代码高亮。实现主要功能有:",
-                "functions": [
-                    {"function":"代码在HTML页面动态的出现，页面动态代码可以进行快中慢调速、代码实现高亮"}
-                ],
-                "preview": "https://nolaaaaa.github.io/demo/pikachu/dynamic",
-                "code": "https://github.com/Nolaaaaa/demo/tree/master/pikachu/dynamic",
-                "image": "#",
-                "imageAlt": ""
-            },
-            {
-                "title": "个人简历",
-                "Etitle": "A web resume",
-                "skills": [
-                    {"skill":"CSS3"},
-                    {"skill":"HTML5"},
-                    {"skill":"jQuery"},
-                    {"skill":"Tween"},
-                    {"skill":"LeanCloud"}
-                ],
-                "describe": "使用<b>jQuery</b>进行开发，留言版数据库使用<b>LeanCloud</b>储存获取数据，页面动画用<b>Tween.js</b>实现:",
-                "functions": [
-                    {"function":"实现页面动画功能，实现留言功能"}
-                ],
-                "preview": "https://nolaaaaa.github.io/resume/index.html",
-                "code": "https://github.com/Nolaaaaa/resume",
-                "image": "#",
+                "image": "https://i.loli.net/2019/03/25/5c98f3524e514.jpg",
                 "imageAlt": ""
             }
         ]
