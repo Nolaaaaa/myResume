@@ -12,7 +12,7 @@ ___
 
 ### 联系方式
 ___
-* 微信：[heminnaaaa](https://github.com/Nolaaaaa/resume/blob/resume/img/wechat.jpg)
+* 微信：[heminnaaaa](https://github.com/Nolaaaaa/resume/blob/master/img/wechat.jpg)
 * 邮箱：[venomhmn@gmail.com](mailto:venomhmn@gmail.com)
 * 电话：17621604220 
 
