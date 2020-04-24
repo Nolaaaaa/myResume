@@ -11,7 +11,7 @@
 ---
 ## 联系方式
 * 微信：[heminnaaaa](https://github.com/Nolaaaaa/resume/blob/master/img/wechat.jpg)
-* 邮箱：[venomhmn@gmail.com](mailto:venomhmn@gmail.com)
+* 邮箱：[venomhmn@qq.com](mailto:venomhmn@qq.com)
 * 电话：17621604220 
 ---
 ## 工作经验
@@ -25,7 +25,7 @@
   * 用户列表、档案，主要功能：展示用户基本信息、修改备注名
 * 用户体验优化上做的事：
   * 对页面进行预更新，减轻用户感知
-  * 采用静默登录，保证用户在一次授权后，后续登录无需再次受授权弹窗干扰
+  * 采用静默授权登录，保证用户在一次授权后，后续登录无需再次受授权弹窗干扰
 * 代码/性能优化上做的事：
   * 为避免重复的代码，与前端团队成员协作，将基础常用的一些模块组件化，整体提高了开发效率
   * 推动后端对静态资源请求开启 HTTP 缓存控制，提升资源加载速度，减少不必要的请求，减轻服务器压力
@@ -34,7 +34,6 @@
   * 减少代码的深层嵌套，提升代码逻辑性及可读性
   * 数据过多时使用懒加载，节省内存资源
 * 优化结果：小程序调试器 Audits 面板`Failed Audits`数量减少**50%**，性能指标评定为**优秀**
-* 期间因业务需求开发**支付宝小程序**，后因支付宝不支持社交笔记类小程序放弃上线
 #### 吃什么问问营养师小程序  [预览地址](https://github.com/Nolaaaaa/resume/blob/master/img/wenwen_diet.jpg)
 * 吃什么问问的营养师端
 * 工作内容:
@@ -52,7 +51,7 @@
 * 一个微信小程序写的一个**商城项目**
 * 工作内容: 实现**订单管理**、**地址管理**、**登录功能**
 
-### 上海昌硕科技有限公司--QA工程师（ 2018年7月 ~ 2019年8月 ）
+### 上海昌硕科技有限公司--QA工程师（ 2017年7月 ~ 2018年8月 ）
 * 公司介绍：台企，主要从事笔记本电脑、手机等电子信息产品的研发与制造，母公司和硕联合科技股份有限公司为世界 500 强企业
 * 工作内容：新机种**Line Qual阶段**与客户沟通、审核各制程提供的资料并在审核OK后上传给客户、出现Issue时追踪处理；负责组织**ISO9001**、**ISO14001**管理体系的相关内部稽核，参与公司的**年度内审**及**第三方认证陪审**等工作等
 * 离职原因：工作内容与志趣不符
@@ -61,11 +60,10 @@
 #### HTML 5 & CSS 3 
 * 能使用语义化标签，根据 HTML5 标准编写具有语义化的文档结构 
 * CSS：能使用多种方式进行布局，如**float、position、flex、grid**等、能使用多种方法对元素进行垂直或水平居中
-* 使用 Css 预处理器如 Less，提升开发效率和质量  
+* 熟练使用 Less 等预处理器，提高开发效率
 #### ECMAScript（JavaScript）
 * 熟练使用 ECMAScript，理解 **异步、this、作用域链、原型链、闭包** 等基础知识
 * 了解 ES6 常用语法，如**块作用域、箭头函数、模板字符串、解构赋值**等
-* 了解**Object.defineProperty**和**Proxy**的异同及优缺点
 #### TypeScript入门
 * 熟悉 TS 中类型、类和接口、类型的定义 等
 #### DOM & BOM 
@@ -74,34 +72,34 @@
 #### 命令行 & Git 
 * 了解命令行，能够使用命令行进行常用的操作 
 * 了解 git 版本控制工具以及常用的操作 
-#### 微信小程序&Vue.js
-* 熟练使用**微信小程序**进行开发、了解小程序路由、生命周期、组件的编写及使用
-* 能使用 Vue.js 完成项目，熟悉Vue.js的数据**双向绑定**、**父子组件间的通信**等操作
-* 熟悉**Vue-Router路由**、**vuex状态管理** 、**vue生命周期**
+#### 微信小程序 & 支付宝小程序 & 多端开发框架uni-app & Vue.js 
+* 熟练使用框架快速进行开发
 #### HTTP 
-* 了解常见状态码含义、http请求及响应、了解**QUIC协议**和**TCP/UDP协议**的异同及优缺点
-* 了解HTTP在客户端和服务器之间的通信过程，了解**cookie、localStorage、sessionStorage**的基本区别 
+* 熟悉常见状态码含义、http请求及响应、了解**QUIC协议**和**TCP/UDP协议**的异同及优缺点
+* 熟悉**cookie、localStorage、sessionStorage**的基本区别
 #### 其他  
 * 具备基本的前端安全、性能优化等基本知识、了解**XSS攻击**和**CSRF攻击**的攻击原理以及如何预防这类攻击
-* 了解**python**数据结构、函数式编程、模块和包、面向对象编程 等知识
-* 能使用**Scrapy**写爬虫、熟练使用 Xpath 的基本语法、了解反爬虫的基本方法
-* 熟悉**linux**系统、熟练**photoshop**等设计工具、利用本地项目构建**Chrome插件**
+* 熟悉 Python 的基础知识，使用 Scrapy 写过爬虫、了解 Xpath 的基本语法、了解反爬虫的基本方法
+* 熟悉**linux**系统、熟练**photoshop**等设计工具等
 ---
 ## 作品集
 #### 简历制作器  [预览链接](https://nolaaaaa.github.io/resume-maker/dist/) [代码链接](https://github.com/Nolaaaaa/resume-maker)
 * 一个在线简历编辑器，实现了简历在线编辑，使用**vue-cli + webpack**进行模块化开发，使用scss进行css预处理编写
 * 主要功能: 技能区、项目区的可编辑，编辑时立即生成简历，简历可预览
 #### 快捷导航  [预览链接](https://nolaaaaa.github.io/navigation-page) [代码链接](https://github.com/Nolaaaaa/navigation-page)
-* 使用原生 JS 开发，利用 localStorage 储存的储存功能，实现一个不用动鼠标，通过快捷键即可进入绑定网址的便捷大方美观的导航页面
+* 使用原生**JavaScript**开发，利用 localStorage 储存的储存功能，实现一个不用动鼠标，通过快捷键即可进入绑定网址的便捷大方美观的导航页面
 * 实现主要功能有: 键盘导航功能，点击键盘对应字母即可跳转到对应页面，可动态编辑保存导航地址，页面新增搜索框可输入内容进行搜索，添加了谷歌插件配置，可在Chrome新标签页打开使用
 #### Canvas画板  [预览链接](https://nolaaaaa.github.io/canvas-drawing-board) [代码链接](https://github.com/Nolaaaaa/canvas-drawing-board)
 * 通过原生**JavaScript + canvas**实现的在线画板
 * 主要功能有: 画笔颜色、画笔粗细可选择、橡皮擦、一键清除的功能、绘画内容可本地保存，可鼠标绘画也可触摸绘画，适配移动端操作 
-#### 日常小demo集  [预览链接](https://github.com/Nolaaaaa/demo/blob/master/README.md) [代码链接](https://github.com/Nolaaaaa/demo)
+#### TodoList  [预览链接](https://nolaaaaa.github.io/todo/dist/) [代码链接](https://github.com/Nolaaaaa/todo)
+* todolist，使用**vue-cli**开发完成
+* 主要功能有: 增加、删除、修改等功能，使用 localStorage 存储功能实现页面刷新内容不变，并通过drag相关api实现拖拽组件，可拖拽移动内容位置
+#### 日常demo集  [预览链接](https://github.com/Nolaaaaa/demo/blob/master/README.md) [代码链接](https://github.com/Nolaaaaa/demo)
 
 ---
 ## 自我描述
 ___
-* 充满好奇心，享受coding，对技术有热情，习惯总结和分享
 * 良好的沟通协调能力和团队合作能力，工作主动，认真细致 
-* 兴趣：日语，音乐，吉他
+* 较强的学习能力，能在较短的时间内掌握新知识
+* 对编码规范、代码格式等有较高的自我要求
